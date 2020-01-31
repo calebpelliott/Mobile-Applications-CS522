@@ -66,11 +66,10 @@ public class ChatClient extends Activity implements OnClickListener {
 		StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build(); 
 		StrictMode.setThreadPolicy(policy);
 
-		// TODO initialize the UI.
-
-
-		
-		// End todo
+		destinationHost = (EditText) findViewById(R.id.destination_host);
+		chatName = (EditText) findViewById(R.id.chat_name);
+		messageText = (EditText) findViewById(R.id.message_text);
+		sendButton = (Button) findViewById(R.id.send_button);
 
 		try {
 
@@ -97,30 +96,29 @@ public class ChatClient extends Activity implements OnClickListener {
 			 * port on the host redirected to the server port on the server AVD.
 			 */
 			
-			InetAddress destAddr = InetAddress.getLocalHost();
-			
+			InetAddress destAddr = InetAddress.getByName(destinationHost.getText().toString());
+
 			int destPort = getResources().getInteger(R.integer.app_port);
 
-			String clientName;
+			String clientName = chatName.getText().toString();
 			
 			byte[] sendData;  // Combine sender and message text; default encoding is UTF-8
-			
-			// TODO get data from UI (no-op if chat name is blank)
 
-			// undo!!!!
-			String msg = "fart";
-			sendData = msg.getBytes();
+			sendData = (clientName + messageText.getText().toString()).getBytes();
 
-			// End todo
+			if(clientName != "") {
+				Log.d(TAG, String.format("Sending data from address %s:%d", clientSocket.getInetAddress(), clientSocket.getPort()));
 
-			Log.d(TAG, String.format("Sending data from address %s:%d", clientSocket.getInetAddress(), clientSocket.getPort()));
+				DatagramPacket sendPacket = new DatagramPacket(sendData,
+						sendData.length, destAddr, destPort);
 
-			DatagramPacket sendPacket = new DatagramPacket(sendData,
-					sendData.length, destAddr, destPort);
+				clientSocket.send(sendPacket);
 
-			clientSocket.send(sendPacket);
-
-			Log.d(TAG, "Sent packet: " + msg);
+				Log.d(TAG, "Sent packet: " + sendData.toString());
+			}
+			else{
+				Log.d(TAG, "Attempt to send name without client name. Message not sent.");
+			}
 
 			
 		} catch (UnknownHostException e) {
