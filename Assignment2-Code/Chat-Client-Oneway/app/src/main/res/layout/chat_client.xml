@@ -70,8 +70,7 @@
         	android:layout_width="0dp"
         	android:layout_weight="0.3"
         	android:text="@string/send_label"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-			android:onClick="onClick"	/>
+            android:textAppearance="?android:attr/textAppearanceMedium"	/>
 
     </LinearLayout>
 

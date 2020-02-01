@@ -52,12 +52,14 @@ public class ChatServer extends Activity implements OnClickListener {
     /*
      * TODO: Declare a listview for messagesAdapter, and an adapter for displaying messagesAdapter.
      */
-
+    private ListView messagesListView;
+    private ArrayList<String> messages;
+    private ArrayAdapter<String> messagesAdapter;
     /*
      * End Todo
      */
 
-    Button next;
+    private Button nextButton;
 
     /*
      * Called when the activity is first created.
@@ -95,8 +97,14 @@ public class ChatServer extends Activity implements OnClickListener {
         /*
          * TODO: Initialize the UI.
          */
+        nextButton = (Button) findViewById(R.id.next);
+        nextButton.setOnClickListener(this);
 
+        messagesListView = (ListView) findViewById(R.id.message_list);
+        messages = new ArrayList<String>();
+        messagesAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, messages);
 
+        messagesListView.setAdapter(messagesAdapter);
         /*
          * End Todo
          */
@@ -112,7 +120,7 @@ public class ChatServer extends Activity implements OnClickListener {
         try {
 
 
-            serverSocket.receive(receivePacket);
+            /*serverSocket.receive(receivePacket);
             Log.d(TAG, "Received a packet");
 
             InetAddress sourceIPAddress = receivePacket.getAddress();
@@ -122,12 +130,13 @@ public class ChatServer extends Activity implements OnClickListener {
             String name = msgContents[0];
             String message = msgContents[1];
 
-            Log.d(TAG, "Received from " + name + ": " + message);
+            Log.d(TAG, "Received from " + name + ": " + message);*/
 
             /*
              * TODO: Add message with sender to the display.
              */
-
+            messages.add("Look mom, I'm on a list!!!");
+            messagesAdapter.notifyDataSetChanged();
             /*
              * End Todo
              */

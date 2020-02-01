@@ -69,8 +69,9 @@ public class ChatClient extends Activity implements OnClickListener {
 		destinationHost = (EditText) findViewById(R.id.destination_host);
 		chatName = (EditText) findViewById(R.id.chat_name);
 		messageText = (EditText) findViewById(R.id.message_text);
-		sendButton = (Button) findViewById(R.id.send_button);
 
+		sendButton = (Button) findViewById(R.id.send_button);
+		sendButton.setOnClickListener(this);
 		try {
 
 			int port = getResources().getInteger(R.integer.app_port);
