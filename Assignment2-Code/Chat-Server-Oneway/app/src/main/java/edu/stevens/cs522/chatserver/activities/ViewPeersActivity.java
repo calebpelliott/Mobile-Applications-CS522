@@ -5,6 +5,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 
 import java.util.ArrayList;
 
@@ -17,7 +19,7 @@ public class ViewPeersActivity extends Activity implements AdapterView.OnItemCli
     public static final String PEERS_KEY = "peers";
 
     private ArrayList<Peer> peers;
-
+    private ArrayList<String> peerNames;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,8 +27,18 @@ public class ViewPeersActivity extends Activity implements AdapterView.OnItemCli
         setContentView(R.layout.view_peers);
 
         peers = getIntent().getParcelableArrayListExtra(PEERS_KEY);
+        peerNames = new ArrayList<String>();
+
+        for(Peer p: peers){
+            peerNames.add(p.name);
+        }
+        ListView peerListView = (ListView) findViewById(R.id.peer_list);
+        ArrayAdapter peerAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, peerNames);
+        peerListView.setAdapter(peerAdapter);
+        peerAdapter.notifyDataSetChanged();
 
         // TODO display the list of peers, set this activity as onClick listener
+        peerListView.setOnItemClickListener(this);
     }
 
 
