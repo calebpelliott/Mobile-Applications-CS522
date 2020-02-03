@@ -99,12 +99,11 @@ public class ChatClient extends Activity implements OnClickListener {
 			
 			InetAddress destAddr = InetAddress.getByName(destinationHost.getText().toString());
 
-			int destPort = getResources().getInteger(R.integer.app_port);
+			int destPort = 6666;
 
-			String clientName = chatName.getText().toString();
+			String clientName = chatName.getText().toString() + ":";
 			
 			byte[] sendData;  // Combine sender and message text; default encoding is UTF-8
-
 			sendData = (clientName + messageText.getText().toString()).getBytes();
 
 			if(clientName != "") {

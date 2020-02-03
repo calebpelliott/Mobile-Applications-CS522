@@ -110,7 +110,7 @@ public class ChatServer extends Activity implements OnClickListener {
          */
 
     }
-
+    
     public void onClick(View v) {
 
         byte[] receiveData = new byte[1024];
@@ -120,22 +120,21 @@ public class ChatServer extends Activity implements OnClickListener {
         try {
 
 
-            /*serverSocket.receive(receivePacket);
+            serverSocket.receive(receivePacket);
             Log.d(TAG, "Received a packet");
 
             InetAddress sourceIPAddress = receivePacket.getAddress();
             Log.d(TAG, "Source IP Address: " + sourceIPAddress);
-
             String msgContents[] = new String(receivePacket.getData(), 0, receivePacket.getLength()).split(":");
             String name = msgContents[0];
             String message = msgContents[1];
 
-            Log.d(TAG, "Received from " + name + ": " + message);*/
+            Log.d(TAG, "Received from " + name + ": " + message);
 
             /*
              * TODO: Add message with sender to the display.
              */
-            messages.add("Look mom, I'm on a list!!!");
+            messages.add(msgContents[0] + ":" + msgContents[1]);
             messagesAdapter.notifyDataSetChanged();
             /*
              * End Todo
