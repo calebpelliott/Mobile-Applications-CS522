@@ -53,14 +53,11 @@ public class ChatServer extends Activity implements OnClickListener {
     private ArrayList<Peer> peers;
 
     /*
-     * TODO: Declare a listview for messagesAdapter, and an adapter for displaying messagesAdapter.
+     * Listview for messagesAdapter, and an adapter for displaying messagesAdapter.
      */
     private ListView messagesListView;
     private ArrayList<String> messages;
     private ArrayAdapter<String> messagesAdapter;
-    /*
-     * End Todo
-     */
 
     private Button nextButton;
 
@@ -97,9 +94,7 @@ public class ChatServer extends Activity implements OnClickListener {
         // List of peers
         peers = new ArrayList<Peer>();
 
-        /*
-         * TODO: Initialize the UI.
-         */
+        // Initialize UI
         nextButton = (Button) findViewById(R.id.next);
         nextButton.setOnClickListener(this);
 
@@ -108,10 +103,6 @@ public class ChatServer extends Activity implements OnClickListener {
         messagesAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, messages);
 
         messagesListView.setAdapter(messagesAdapter);
-        /*
-         * End Todo
-         */
-
     }
 
     public void onClick(View v) {
@@ -135,13 +126,10 @@ public class ChatServer extends Activity implements OnClickListener {
             Log.d(TAG, "Received from " + name + ": " + message);
 
             /*
-             * TODO: Add message with sender to the display.
+             * Add message with sender to the display.
              */
             messages.add(msgContents[0] + ":" + msgContents[1]);
             messagesAdapter.notifyDataSetChanged();
-            /*
-             * End Todo
-             */
 
             //Add peer to array used by sub-activities
 
@@ -218,7 +206,6 @@ public class ChatServer extends Activity implements OnClickListener {
         switch(item.getItemId()) {
 
             case R.id.peers:
-                // TODO PEERS provide the UI for viewing list of peers
                 // Send the list of peers to the subactivity as a parcelable list
                 Intent intent = new Intent(this, ViewPeersActivity.class);
                 intent.putExtra(PEERS_KEY, peers);

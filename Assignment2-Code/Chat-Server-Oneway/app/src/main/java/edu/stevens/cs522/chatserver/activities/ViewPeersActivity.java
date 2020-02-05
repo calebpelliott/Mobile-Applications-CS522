@@ -32,12 +32,14 @@ public class ViewPeersActivity extends Activity implements AdapterView.OnItemCli
         for(Peer p: peers){
             peerNames.add(p.name);
         }
+
+        //Display the list of peers
         ListView peerListView = (ListView) findViewById(R.id.peer_list);
         ArrayAdapter peerAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, peerNames);
         peerListView.setAdapter(peerAdapter);
         peerAdapter.notifyDataSetChanged();
 
-        // TODO display the list of peers, set this activity as onClick listener
+        //Set this activity as onClick listener
         peerListView.setOnItemClickListener(this);
     }
 

@@ -27,7 +27,6 @@ public class ViewPeerActivity extends Activity {
             throw new IllegalArgumentException("Expected peer as intent extra");
         }
 
-        // TODO init the UI
         TextView name = (TextView) findViewById(R.id.view_user_name);
         name.setText(peer.name);
 

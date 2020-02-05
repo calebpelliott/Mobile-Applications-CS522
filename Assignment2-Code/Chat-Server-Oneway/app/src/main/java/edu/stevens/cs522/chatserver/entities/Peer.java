@@ -30,10 +30,9 @@ public class Peer implements Parcelable {
 
     @Override
     public void writeToParcel(Parcel out, int flags) {
-        // TODO
         out.writeLong(id);
         out.writeString(name);
-        out.writeSerializable(timestamp);
+        out.writeSerializable(timestamp); //Avoid using serializable
         out.writeSerializable(address);
 
 
@@ -46,7 +45,6 @@ public class Peer implements Parcelable {
     public Peer() {}
 
     public Peer(Parcel in) {
-        // TODO
         id = in.readLong();
         name = in.readString();
         timestamp = (Date) in.readSerializable();
@@ -62,13 +60,11 @@ public class Peer implements Parcelable {
 
         @Override
         public Peer createFromParcel(Parcel source) {
-            // TODO
             return new Peer(source);
         }
 
         @Override
         public Peer[] newArray(int size) {
-            // TODO
             return new Peer[size];
         }
 

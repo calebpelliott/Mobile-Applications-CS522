@@ -4,7 +4,7 @@
     <!-- Use this to reference the development machine from emulator -->
     <string name="localhost">10.0.2.2</string>
 
-    <string name="app_name">Chat Client (Basic)</string>
+    <string name="app_name">Chat Client (Basic) Caleb Elliott</string>
     <integer name="app_port">6666</integer>
     <string name="latitude">40.744906</string>
     <string name="longitude">-74.023937</string>
