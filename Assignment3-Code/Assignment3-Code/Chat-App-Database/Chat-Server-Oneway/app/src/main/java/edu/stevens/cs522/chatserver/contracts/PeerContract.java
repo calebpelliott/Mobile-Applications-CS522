@@ -11,5 +11,9 @@ import java.net.InetAddress;
 public class PeerContract implements BaseColumns {
 
     // TODO define column names, getters for cursors, setters for contentvalues
+    public final static String NAME = "NAME";
 
+    public final static String TIMESTAMP = "TIMESTAMP";
+
+    public final static String ADDRESS = "ADDRESS";
 }

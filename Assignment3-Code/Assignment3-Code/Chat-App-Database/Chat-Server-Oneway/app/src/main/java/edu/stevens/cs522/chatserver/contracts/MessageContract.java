@@ -16,7 +16,7 @@ public class MessageContract implements BaseColumns {
 
     public static final String SENDER = "sender";
 
-    // TODO remaining columns in Messages table
+    public static final String SENDERID = "senderId";
 
     private static int messageTextColumn = -1;
 
