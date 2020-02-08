@@ -1,5 +1,6 @@
 package edu.stevens.cs522.chatserver.databases;
 
+import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.SQLException;
@@ -24,7 +25,7 @@ public class ChatDbAdapter {
 
     private static final String PEER_TABLE = "peers";
 
-    private static final int DATABASE_VERSION = 1;
+    private static final int DATABASE_VERSION = 2;
 
     private DatabaseHelper dbHelper;
 
@@ -39,7 +40,7 @@ public class ChatDbAdapter {
                 + MessageContract.MESSAGE_TEXT + " text not null, "
                 + MessageContract.TIMESTAMP + " text not null, "
                 + MessageContract.SENDER + " text not null, "
-                + MessageContract.SENDERID + " text not null "
+                + MessageContract.SENDERID + " integer not null "
                 + ")";
         private static final String DATABASE_CREATE_PEER =
                 "create table " + PEER_TABLE + " ("
@@ -76,13 +77,13 @@ public class ChatDbAdapter {
     }
 
     public void open() throws SQLException {
-        // TODO
         db = dbHelper.getWritableDatabase();
     }
 
     public Cursor fetchAllMessages() {
-        // TODO
-        return null;//db.query(MESSAGE_TABLE, null);
+        Cursor c = db.query(MESSAGE_TABLE, new String[] {MessageContract._ID, MessageContract.MESSAGE_TEXT, MessageContract.TIMESTAMP, MessageContract.SENDER, MessageContract.SENDERID},
+                null, null, null, null, null);
+        return c;
     }
 
     public Cursor fetchAllPeers() {
@@ -91,8 +92,17 @@ public class ChatDbAdapter {
     }
 
     public Peer fetchPeer(long peerId) {
-        // TODO
-        return null;
+        String[] projection = {PeerContract._ID, PeerContract.NAME, PeerContract.TIMESTAMP, PeerContract.ADDRESS};
+        String selection = MessageContract._ID + "=?";
+        String[] selectionArgs = {Long.toString(peerId)};
+
+        Cursor c = db.query(PEER_TABLE,
+                            projection,
+                            selection,
+                            selectionArgs, null, null, null);
+
+
+        return new Peer(c);
     }
 
     public Cursor fetchMessagesFromPeer(Peer peer) {
@@ -101,8 +111,12 @@ public class ChatDbAdapter {
     }
 
     public long persist(Message message) throws SQLException {
-        // TODO
-        throw new IllegalStateException("Unimplemented: persist message");
+        ContentValues cv = new ContentValues();
+        message.writeToProvider(cv);
+
+        return db.insert(MESSAGE_TABLE,
+                 null,
+                  cv);
     }
 
     /**
@@ -114,6 +128,6 @@ public class ChatDbAdapter {
     }
 
     public void close() {
-        // TODO
+        dbHelper.close();
     }
 }
