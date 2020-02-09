@@ -46,7 +46,7 @@ public class Message implements Parcelable, Persistable {
 
     @Override
     public void writeToProvider(ContentValues out) {
-        MessageContract.putidColumn(out, id);
+        MessageContract.putId(out, id);
         MessageContract.putMessageText(out, messageText);
         MessageContract.putTimestamp(out, timestamp);
         MessageContract.putSender(out, sender);

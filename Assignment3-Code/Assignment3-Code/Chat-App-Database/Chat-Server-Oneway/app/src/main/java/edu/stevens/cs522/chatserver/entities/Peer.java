@@ -8,6 +8,8 @@ import android.os.Parcelable;
 import java.net.InetAddress;
 import java.util.Date;
 
+import edu.stevens.cs522.chatserver.contracts.PeerContract;
+
 /**
  * Created by dduggan.
  */
@@ -29,7 +31,10 @@ public class Peer implements Parcelable, Persistable {
     }
 
     public Peer(Cursor cursor) {
-        // TODO
+        id = PeerContract.getId(cursor);
+        name = PeerContract.getName(cursor);
+        timestamp = PeerContract.getTimestamp(cursor);
+        address = PeerContract.getAddress(cursor);
     }
 
     public Peer(Parcel in) {
@@ -41,7 +46,10 @@ public class Peer implements Parcelable, Persistable {
 
     @Override
     public void writeToProvider(ContentValues out) {
-        // TODO
+        PeerContract.putId(out, id);
+        PeerContract.putName(out, name);
+        PeerContract.putTimestamp(out, timestamp);
+        PeerContract.putAddress(out, address);
     }
 
     @Override

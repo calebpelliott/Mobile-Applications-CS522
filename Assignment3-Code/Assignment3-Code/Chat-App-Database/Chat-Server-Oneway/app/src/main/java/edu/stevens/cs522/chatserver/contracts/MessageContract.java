@@ -46,7 +46,7 @@ public class MessageContract implements BaseColumns {
         return cursor.getLong(idColumn);
     }
 
-    public static void putidColumn(ContentValues out, long id) {
+    public static void putId(ContentValues out, long id) {
         out.put(_ID, id);
     }
 

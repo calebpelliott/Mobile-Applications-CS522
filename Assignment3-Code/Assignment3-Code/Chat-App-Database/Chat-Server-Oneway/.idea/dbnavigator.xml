@@ -41,10 +41,7 @@
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
-    <open-files>
-      <object connection-id="20c4ceb8-71e5-488a-889b-310cb0485795" object-ref="schemas/main/tables/messages" />
-      <object connection-id="20c4ceb8-71e5-488a-889b-310cb0485795" object-ref="schemas/main/tables/peers" />
-    </open-files>
+    <open-files />
   </component>
   <component name="DBNavigator.Project.DatabaseSessionManager">
     <connection id="a9f53ed7-c4ef-4936-aa3b-5bc097edef6c" />

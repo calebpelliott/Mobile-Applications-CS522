@@ -87,13 +87,14 @@ public class ChatDbAdapter {
     }
 
     public Cursor fetchAllPeers() {
-        // TODO
-        return null;
+        Cursor c = db.query(PEER_TABLE, new String[] {PeerContract._ID, PeerContract.NAME, PeerContract.TIMESTAMP, PeerContract.ADDRESS},
+                null, null, null, null, null);
+        return c;
     }
 
     public Peer fetchPeer(long peerId) {
         String[] projection = {PeerContract._ID, PeerContract.NAME, PeerContract.TIMESTAMP, PeerContract.ADDRESS};
-        String selection = MessageContract._ID + "=?";
+        String selection = PeerContract._ID + "=?";
         String[] selectionArgs = {Long.toString(peerId)};
 
         Cursor c = db.query(PEER_TABLE,
@@ -106,8 +107,15 @@ public class ChatDbAdapter {
     }
 
     public Cursor fetchMessagesFromPeer(Peer peer) {
-        // TODO
-        return null;
+        String[] projection = {MessageContract._ID, MessageContract.MESSAGE_TEXT, MessageContract.TIMESTAMP, MessageContract.SENDER, MessageContract.SENDERID};
+        String selection = MessageContract.SENDERID + "=?";
+        String[] selectionArgs = {Long.toString(peer.id)};
+
+        Cursor c = db.query(MESSAGE_TABLE,
+                            projection,
+                            selection,
+                            selectionArgs, null, null, null);
+        return c;
     }
 
     public long persist(Message message) throws SQLException {
@@ -123,11 +131,35 @@ public class ChatDbAdapter {
      * Add a peer record if it does not already exist; update information if it is already defined.
      */
     public long persist(Peer peer) throws SQLException {
-        // TODO
-        throw new IllegalStateException("Unimplemented: persist peer");
+        ContentValues cv = new ContentValues();
+        peer.writeToProvider(cv);
+
+        String[] projection = {PeerContract._ID, PeerContract.NAME, PeerContract.TIMESTAMP, PeerContract.ADDRESS};
+        String selection = PeerContract._ID + "=?";
+        String[] selectionArgs = {Long.toString(peer.id)};
+
+        Cursor c = db.query(PEER_TABLE,
+                            projection,
+                            selection,
+                            selectionArgs, null, null, null);
+
+        //Check if record exists. Insert if it doesn't, update if it does
+        long retCode;
+        if(c.getCount() <= 0){
+            retCode = db.insert(PEER_TABLE,
+                                null,
+                                cv);
+        }
+        else{
+            retCode = db.update(PEER_TABLE,
+                                cv,
+                                selection,
+                                selectionArgs);
+        }
+        return retCode;
     }
 
     public void close() {
-        dbHelper.close();
+        db.close();
     }
 }

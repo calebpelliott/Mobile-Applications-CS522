@@ -22,6 +22,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.widget.CursorAdapter;
 import android.widget.ListView;
 import android.widget.SimpleCursorAdapter;
 
@@ -99,26 +100,77 @@ public class ChatServer extends Activity implements OnClickListener {
 
         setContentView(R.layout.messages);
 
+        /*
+        *Initialize UI
+         */
+        messageList = (ListView) findViewById(R.id.message_list);
+        next = (Button) findViewById(R.id.next);
         // TODO open the database using the database adapter
         chatDbAdapter = new ChatDbAdapter(this);
         chatDbAdapter.open();
         // TODO query the database using the database adapter, and manage the cursor on the messages thread
-        Message m = new Message();
-        m.id = 2;
-        m.senderId = 3;
+        Cursor c = chatDbAdapter.fetchAllMessages();
+        messagesAdapter = new SimpleCursorAdapter(this,
+                android.R.layout.simple_list_item_2,
+                c,
+                new String[] {MessageContract.SENDER, MessageContract.MESSAGE_TEXT},
+                new int[] {R.id.message_list},
+                CursorAdapter.FLAG_REGISTER_CONTENT_OBSERVER);
+        /*Message m = new Message();
+        m.id = 3;
+        m.senderId = 123;
         m.timestamp = new Date();
-        m.messageText = "farbo";
-        m.sender = "chorbo";
+        m.messageText = "my fist message";
+        m.sender = "127.0.0.1";
 
+        long ret = chatDbAdapter.persist(m);
+
+        m.id = 4;
+        m.messageText = "my second message";
         chatDbAdapter.persist(m);
 
         Cursor c = chatDbAdapter.fetchAllMessages();
+        if (c.getCount() <= 0)
+        {
+            System.out.print("yo");
+        }
         c.moveToFirst();
         Message m2 = new Message(c);
+
+        Peer p = new Peer();
+        p.id = 1244;
+        p.name = "name1";
+        p.timestamp = new Date();
+        try{
+            p.address = InetAddress.getLocalHost();
+        }
+        catch (Exception e){
+
+        }
+        c = chatDbAdapter.fetchMessagesFromPeer(p);
+        while (c.moveToNext()){
+            Message m3 = new Message(c);
+        }
+        c = chatDbAdapter.fetchAllPeers();
+        if (c.getCount() <= 0)
+        {
+            System.out.print("yo");
+        }
+        chatDbAdapter.persist(p);
+        p.name = "new name";
+        chatDbAdapter.persist(p);
+        c = chatDbAdapter.fetchAllPeers();
+        if (c.getCount() <= 0)
+        {
+            System.out.print("yo");
+        }
+        c.moveToFirst();
+        Peer p2 = new Peer(c);*/
         // TODO use SimpleCursorAdapter to display the messages received.
-
+        messageList.setAdapter(messagesAdapter);
+        messagesAdapter.notifyDataSetChanged();
         // TODO bind the button for "next" to this activity as listener
-
+        next.setOnClickListener(this);
 	}
 
     public void onClick(View v) {
