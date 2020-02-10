@@ -108,14 +108,25 @@ public class ChatServer extends Activity implements OnClickListener {
         // TODO open the database using the database adapter
         chatDbAdapter = new ChatDbAdapter(this);
         chatDbAdapter.open();
+        Message m = new Message();
+        //m.id = 3;
+        m.senderId = 123;
+        m.timestamp = new Date();
+        m.messageText = "my fourth message";
+        m.sender = "127.0.0.1";
+
+        long ret = chatDbAdapter.persist(m);
         // TODO query the database using the database adapter, and manage the cursor on the messages thread
         Cursor c = chatDbAdapter.fetchAllMessages();
+        while (c.moveToNext()){
+            Message mm = new Message(c);
+        }
+        startManagingCursor(c);//deprecated
         messagesAdapter = new SimpleCursorAdapter(this,
                 android.R.layout.simple_list_item_2,
                 c,
                 new String[] {MessageContract.SENDER, MessageContract.MESSAGE_TEXT},
-                new int[] {R.id.message_list},
-                CursorAdapter.FLAG_REGISTER_CONTENT_OBSERVER);
+                new int[] {android.R.id.text1, android.R.id.text2});//deprecated
         /*Message m = new Message();
         m.id = 3;
         m.senderId = 123;
@@ -193,6 +204,8 @@ public class ChatServer extends Activity implements OnClickListener {
             message.sender = msgContents[0];
             message.timestamp = new Date(Long.parseLong(msgContents[1]));
             message.messageText = msgContents[2];
+            //message.id
+            //message.senderId
 
 			Log.d(TAG, "Received from " + message.sender + ": " + message.messageText);
 

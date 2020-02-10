@@ -135,8 +135,8 @@ public class ChatDbAdapter {
         peer.writeToProvider(cv);
 
         String[] projection = {PeerContract._ID, PeerContract.NAME, PeerContract.TIMESTAMP, PeerContract.ADDRESS};
-        String selection = PeerContract._ID + "=?";
-        String[] selectionArgs = {Long.toString(peer.id)};
+        String selection = PeerContract.NAME + "=?";
+        String[] selectionArgs = {peer.name};
 
         Cursor c = db.query(PEER_TABLE,
                             projection,
