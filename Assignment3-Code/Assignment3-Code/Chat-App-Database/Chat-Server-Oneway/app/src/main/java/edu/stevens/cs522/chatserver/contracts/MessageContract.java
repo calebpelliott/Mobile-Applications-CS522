@@ -38,7 +38,6 @@ public class MessageContract implements BaseColumns {
         out.put(MESSAGE_TEXT, messageText);
     }
 
-    // TODO remaining getter and putter operations for other columns
     public static long getId(Cursor cursor) {
         if (idColumn < 0) {
             idColumn = cursor.getColumnIndexOrThrow(_ID);

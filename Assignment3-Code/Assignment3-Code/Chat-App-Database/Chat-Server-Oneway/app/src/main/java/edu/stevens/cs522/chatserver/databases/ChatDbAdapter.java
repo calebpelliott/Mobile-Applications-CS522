@@ -101,9 +101,11 @@ public class ChatDbAdapter {
                             projection,
                             selection,
                             selectionArgs, null, null, null);
-
-
-        return new Peer(c);
+        Peer p = null;
+        if (c.moveToFirst()){
+            p = new Peer(c);
+        }
+        return p;
     }
 
     public Cursor fetchMessagesFromPeer(Peer peer) {
@@ -144,19 +146,20 @@ public class ChatDbAdapter {
                             selectionArgs, null, null, null);
 
         //Check if record exists. Insert if it doesn't, update if it does
-        long retCode;
-        if(c.getCount() <= 0){
-            retCode = db.insert(PEER_TABLE,
-                                null,
-                                cv);
+        long retId;
+        if(c.moveToFirst()){
+            retId = MessageContract.getId(c);
+            db.update(PEER_TABLE,
+                      cv,
+                      selection,
+                      selectionArgs);
         }
         else{
-            retCode = db.update(PEER_TABLE,
-                                cv,
-                                selection,
-                                selectionArgs);
+            retId = db.insert(PEER_TABLE,
+                    null,
+                    cv);
         }
-        return retCode;
+        return retId;
     }
 
     public void close() {

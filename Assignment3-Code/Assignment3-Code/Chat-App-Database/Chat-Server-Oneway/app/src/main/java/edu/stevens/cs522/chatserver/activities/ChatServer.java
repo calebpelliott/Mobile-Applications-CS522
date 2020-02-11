@@ -11,6 +11,7 @@
 package edu.stevens.cs522.chatserver.activities;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.os.Bundle;
@@ -57,6 +58,8 @@ public class ChatServer extends Activity implements OnClickListener {
      * UI for displayed received messages
      */
 	private ListView messageList;
+
+	private Cursor messageCursor;
 
     private SimpleCursorAdapter messagesAdapter;
 
@@ -108,75 +111,16 @@ public class ChatServer extends Activity implements OnClickListener {
         // TODO open the database using the database adapter
         chatDbAdapter = new ChatDbAdapter(this);
         chatDbAdapter.open();
-        Message m = new Message();
-        //m.id = 3;
-        m.senderId = 123;
-        m.timestamp = new Date();
-        m.messageText = "my fourth message";
-        m.sender = "127.0.0.1";
 
-        long ret = chatDbAdapter.persist(m);
         // TODO query the database using the database adapter, and manage the cursor on the messages thread
-        Cursor c = chatDbAdapter.fetchAllMessages();
-        while (c.moveToNext()){
-            Message mm = new Message(c);
-        }
-        startManagingCursor(c);//deprecated
+        messageCursor = chatDbAdapter.fetchAllMessages();
+        startManagingCursor(messageCursor);//deprecated
         messagesAdapter = new SimpleCursorAdapter(this,
                 android.R.layout.simple_list_item_2,
-                c,
+                messageCursor,
                 new String[] {MessageContract.SENDER, MessageContract.MESSAGE_TEXT},
                 new int[] {android.R.id.text1, android.R.id.text2});//deprecated
-        /*Message m = new Message();
-        m.id = 3;
-        m.senderId = 123;
-        m.timestamp = new Date();
-        m.messageText = "my fist message";
-        m.sender = "127.0.0.1";
 
-        long ret = chatDbAdapter.persist(m);
-
-        m.id = 4;
-        m.messageText = "my second message";
-        chatDbAdapter.persist(m);
-
-        Cursor c = chatDbAdapter.fetchAllMessages();
-        if (c.getCount() <= 0)
-        {
-            System.out.print("yo");
-        }
-        c.moveToFirst();
-        Message m2 = new Message(c);
-
-        Peer p = new Peer();
-        p.id = 1244;
-        p.name = "name1";
-        p.timestamp = new Date();
-        try{
-            p.address = InetAddress.getLocalHost();
-        }
-        catch (Exception e){
-
-        }
-        c = chatDbAdapter.fetchMessagesFromPeer(p);
-        while (c.moveToNext()){
-            Message m3 = new Message(c);
-        }
-        c = chatDbAdapter.fetchAllPeers();
-        if (c.getCount() <= 0)
-        {
-            System.out.print("yo");
-        }
-        chatDbAdapter.persist(p);
-        p.name = "new name";
-        chatDbAdapter.persist(p);
-        c = chatDbAdapter.fetchAllPeers();
-        if (c.getCount() <= 0)
-        {
-            System.out.print("yo");
-        }
-        c.moveToFirst();
-        Peer p2 = new Peer(c);*/
         // TODO use SimpleCursorAdapter to display the messages received.
         messageList.setAdapter(messagesAdapter);
         messagesAdapter.notifyDataSetChanged();
@@ -204,19 +148,22 @@ public class ChatServer extends Activity implements OnClickListener {
             message.sender = msgContents[0];
             message.timestamp = new Date(Long.parseLong(msgContents[1]));
             message.messageText = msgContents[2];
-            //message.id
-            //message.senderId
 
 			Log.d(TAG, "Received from " + message.sender + ": " + message.messageText);
 
-			/*
-			 * TODO upsert peer and insert message into the database
-			 */
+            Peer peer = new Peer();
+            peer.name = msgContents[0];
+            peer.timestamp = new Date(Long.parseLong(msgContents[1]));
+            peer.address = receivePacket.getAddress();
 
-            /*
-             * End TODO
-             */
+            long peerId = chatDbAdapter.persist(peer);
 
+            message.senderId = peerId;
+
+            chatDbAdapter.persist(message);
+
+            messageCursor = chatDbAdapter.fetchAllMessages();
+            messagesAdapter.changeCursor(messageCursor);
             messagesAdapter.notifyDataSetChanged();
 
 		} catch (Exception e) {
@@ -265,7 +212,8 @@ public class ChatServer extends Activity implements OnClickListener {
         switch(item.getItemId()) {
 
             case R.id.peers:
-                // TODO PEERS provide the UI for viewing list of peers
+                Intent intent = new Intent(this, ViewPeersActivity.class);
+                startActivity(intent);
                 break;
 
             default:

@@ -70,7 +70,7 @@ public class PeerContract implements BaseColumns {
         InetAddress address = null;
         try{
             String s = cursor.getString(addressColumn);
-            if(s.equals("localhost/127.0.0.1")){ //InetAddress isn't happy with this format
+            if(s.equals("localhost/127.0.0.1") || s.equals("/127.0.0.1")){ //InetAddress isn't happy with this format
                 s = "127.0.0.1";
             }
             address = InetAddress.getByName(s);
