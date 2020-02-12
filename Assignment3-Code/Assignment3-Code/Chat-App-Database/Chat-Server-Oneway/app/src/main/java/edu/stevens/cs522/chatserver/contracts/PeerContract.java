@@ -14,7 +14,7 @@ import java.util.Date;
 
 public class PeerContract implements BaseColumns {
 
-    // TODO define column names, getters for cursors, setters for contentvalues
+    //define column names, getters for cursors, setters for contentvalues
     public final static String NAME = "NAME";
 
     public final static String TIMESTAMP = "TIMESTAMP";

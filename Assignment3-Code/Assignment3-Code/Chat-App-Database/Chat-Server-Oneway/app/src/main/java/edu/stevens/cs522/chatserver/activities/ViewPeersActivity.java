@@ -17,10 +17,6 @@ import edu.stevens.cs522.chatserver.entities.Peer;
 
 public class ViewPeersActivity extends Activity implements AdapterView.OnItemClickListener {
 
-    /*
-     * TODO See ChatServer for example of what to do, query peers database instead of messages database.
-     */
-
     private ChatDbAdapter chatDbAdapter;
 
     private SimpleCursorAdapter peerAdapter;

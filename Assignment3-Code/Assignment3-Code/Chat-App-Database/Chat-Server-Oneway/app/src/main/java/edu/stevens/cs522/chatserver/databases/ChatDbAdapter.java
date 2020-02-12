@@ -25,7 +25,7 @@ public class ChatDbAdapter {
 
     private static final String PEER_TABLE = "peers";
 
-    private static final int DATABASE_VERSION = 2;
+    private static final int DATABASE_VERSION = 5;
 
     private DatabaseHelper dbHelper;
 
@@ -34,14 +34,7 @@ public class ChatDbAdapter {
 
     public static class DatabaseHelper extends SQLiteOpenHelper {
 
-        private static final String DATABASE_CREATE_MESSAGE =
-                "create table " + MESSAGE_TABLE + " ("
-                + MessageContract._ID + " integer primary key, "
-                + MessageContract.MESSAGE_TEXT + " text not null, "
-                + MessageContract.TIMESTAMP + " text not null, "
-                + MessageContract.SENDER + " text not null, "
-                + MessageContract.SENDERID + " integer not null "
-                + ")";
+
         private static final String DATABASE_CREATE_PEER =
                 "create table " + PEER_TABLE + " ("
                         + PeerContract._ID + " integer primary key, "
@@ -49,15 +42,23 @@ public class ChatDbAdapter {
                         + PeerContract.TIMESTAMP + " text not null, "
                         + PeerContract.ADDRESS + " text not null "
                         + ")";
-
+        private static final String DATABASE_CREATE_MESSAGE =
+                "create table " + MESSAGE_TABLE + " ("
+                        + MessageContract._ID + " integer primary key, "
+                        + MessageContract.MESSAGE_TEXT + " text not null, "
+                        + MessageContract.TIMESTAMP + " text not null, "
+                        + MessageContract.SENDER + " text not null, "
+                        + MessageContract.SENDERID + " integer not null, "
+                        + "foreign key(" + MessageContract.SENDERID + ") references " + PEER_TABLE + "(" + PeerContract._ID + ") "
+                        + ")";
         public DatabaseHelper(Context context, String name, SQLiteDatabase.CursorFactory factory, int version) {
             super(context, name, factory, version);
         }
 
         @Override
         public void onCreate(SQLiteDatabase db) {
-           db.execSQL(DATABASE_CREATE_MESSAGE);
            db.execSQL(DATABASE_CREATE_PEER);
+           db.execSQL(DATABASE_CREATE_MESSAGE);
         }
 
         @Override
@@ -78,6 +79,7 @@ public class ChatDbAdapter {
 
     public void open() throws SQLException {
         db = dbHelper.getWritableDatabase();
+        db.execSQL("PRAGMA foreign_keys=ON;");
     }
 
     public Cursor fetchAllMessages() {

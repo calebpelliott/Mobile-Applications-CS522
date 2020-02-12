@@ -108,11 +108,12 @@ public class ChatServer extends Activity implements OnClickListener {
          */
         messageList = (ListView) findViewById(R.id.message_list);
         next = (Button) findViewById(R.id.next);
-        // TODO open the database using the database adapter
+
+        //open the database using the database adapter
         chatDbAdapter = new ChatDbAdapter(this);
         chatDbAdapter.open();
 
-        // TODO query the database using the database adapter, and manage the cursor on the messages thread
+        //query the database using the database adapter, and manage the cursor on the messages thread
         messageCursor = chatDbAdapter.fetchAllMessages();
         startManagingCursor(messageCursor);//deprecated
         messagesAdapter = new SimpleCursorAdapter(this,
@@ -121,10 +122,10 @@ public class ChatServer extends Activity implements OnClickListener {
                 new String[] {MessageContract.SENDER, MessageContract.MESSAGE_TEXT},
                 new int[] {android.R.id.text1, android.R.id.text2});//deprecated
 
-        // TODO use SimpleCursorAdapter to display the messages received.
+        //use SimpleCursorAdapter to display the messages received.
         messageList.setAdapter(messagesAdapter);
         messagesAdapter.notifyDataSetChanged();
-        // TODO bind the button for "next" to this activity as listener
+        //bind the button for "next" to this activity as listener
         next.setOnClickListener(this);
 	}
 
