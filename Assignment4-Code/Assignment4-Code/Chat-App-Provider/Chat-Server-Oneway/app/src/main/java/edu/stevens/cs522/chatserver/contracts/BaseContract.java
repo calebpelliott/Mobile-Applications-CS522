@@ -34,6 +34,11 @@ public class BaseContract implements BaseColumns {
         return uri.getPath().substring(1);
     }
 
+    public static String contentType(String content){
+        return "vnd.android.cursor/vnd." + AUTHORITY + "." + content + "s";
+    }
 
-
+    public static String contentItemType(String content){
+        return "vnd.android.cursor/vnd." + AUTHORITY + "." + content;
+    }
 }

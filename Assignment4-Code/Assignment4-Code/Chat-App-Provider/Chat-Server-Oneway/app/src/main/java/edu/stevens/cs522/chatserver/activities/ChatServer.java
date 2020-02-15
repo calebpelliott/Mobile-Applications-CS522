@@ -15,6 +15,7 @@ import android.app.LoaderManager;
 import android.content.ContentResolver;
 import android.content.ContentValues;
 import android.content.CursorLoader;
+import android.content.Intent;
 import android.content.Loader;
 import android.database.Cursor;
 import android.net.Uri;
@@ -40,6 +41,7 @@ import edu.stevens.cs522.chatserver.contracts.MessageContract;
 import edu.stevens.cs522.chatserver.contracts.PeerContract;
 import edu.stevens.cs522.chatserver.entities.Message;
 import edu.stevens.cs522.chatserver.entities.Peer;
+import edu.stevens.cs522.chatserver.providers.ChatProvider;
 
 public class ChatServer extends Activity implements OnClickListener, LoaderManager.LoaderCallbacks<Cursor> {
 
@@ -98,10 +100,12 @@ public class ChatServer extends Activity implements OnClickListener, LoaderManag
 
         setContentView(R.layout.messages);
 
+        messageList = (ListView) findViewById(R.id.message_list);
+        next = (Button) findViewById(R.id.next);
         // TODO use SimpleCursorAdapter (with flags=0) to display the messages received.
-
+        fillData(null);
         // TODO bind the button for "next" to this activity as listener
-
+        next.setOnClickListener(this);
         // TODO use loader manager to initiate a query of the database
         getLoaderManager().initLoader(LOADER_ID, null, this);
 	}
@@ -136,7 +140,33 @@ public class ChatServer extends Activity implements OnClickListener, LoaderManag
              * TODO upsert the peer and message into the content provider.
              */
             // For this assignment, OK to do CP insertion on the main thread.
+            final Peer peer = new Peer();
+            peer.name = msgContents[0];
+            peer.timestamp = new Date(Long.parseLong(msgContents[1]));
+            peer.address = receivePacket.getAddress();
+            ContentValues cv = new ContentValues();
+            peer.writeToProvider(cv);
 
+            Cursor c = getContentResolver().query(PeerContract.CONTENT_URI,
+                    null,
+                    PeerContract.NAME + "=?",
+                    new String[]{peer.name},
+                    null);
+
+            if(c.moveToFirst()){
+                getContentResolver().update(PeerContract.CONTENT_URI, cv, null, null);
+                Peer p = new Peer(c);
+                message.senderId = p.id;
+            }
+            else{
+                Uri peerUri = getContentResolver().insert(PeerContract.CONTENT_URI, cv);
+                message.senderId = PeerContract.getId(peerUri);
+            }
+            ContentValues message_cv = new ContentValues();
+            message.writeToProvider(message_cv);
+            getContentResolver().insert(MessageContract.CONTENT_URI, message_cv);
+            //this.messagesAdapter.notifyDataSetChanged();
+            getLoaderManager().restartLoader(LOADER_ID, null, this);
             /*
              * End TODO
              */
@@ -166,20 +196,46 @@ public class ChatServer extends Activity implements OnClickListener, LoaderManag
 		return socketOK;
 	}
 
+	private void fillData(Cursor c){
+        String[] to = new String[]{MessageContract.SENDER,
+                MessageContract.MESSAGE_TEXT};
+        int[] from = new int[]{android.R.id.text1, android.R.id.text2};
+        messagesAdapter = new SimpleCursorAdapter(
+                this,
+                android.R.layout.simple_list_item_2,
+                c,
+                to,
+                from,
+                0);
+
+        ListView lv = (ListView) findViewById(R.id.message_list);
+        lv.setAdapter(messagesAdapter);
+    }
     @Override
     public Loader onCreateLoader(int id, Bundle args) {
         // TODO use a CursorLoader to initiate a query on the database
-        return null;
+        switch (id){
+            case LOADER_ID:
+                return new CursorLoader(this, MessageContract.CONTENT_URI,
+                        new String[] {MessageContract._ID, MessageContract.MESSAGE_TEXT, MessageContract.TIMESTAMP, MessageContract.SENDER, MessageContract.SENDERID},
+                        null, null, null);
+            default:
+                return null;
+        }
+
     }
 
     @Override
     public void onLoadFinished(Loader loader, Cursor data) {
         // TODO populate the UI with the result of querying the provider
+        this.messagesAdapter.swapCursor(data);
+        this.messagesAdapter.notifyDataSetChanged();
     }
 
     @Override
     public void onLoaderReset(Loader loader) {
         // TODO reset the UI when the cursor is empty
+        this.messagesAdapter.swapCursor(null);
     }
 
     public void onDestroy() {
@@ -191,7 +247,8 @@ public class ChatServer extends Activity implements OnClickListener, LoaderManag
     public boolean onCreateOptionsMenu(Menu menu) {
         super.onCreateOptionsMenu(menu);
         // TODO inflate a menu with PEERS and SETTINGS options
-
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.chatserver_menu, menu);
         return true;
     }
 
@@ -201,7 +258,8 @@ public class ChatServer extends Activity implements OnClickListener, LoaderManag
         switch(item.getItemId()) {
 
             case R.id.peers:
-                // TODO PEERS provide the UI for viewing list of peers
+                Intent intent = new Intent(this, ViewPeersActivity.class);
+                startActivity(intent);
                 break;
 
             default:
