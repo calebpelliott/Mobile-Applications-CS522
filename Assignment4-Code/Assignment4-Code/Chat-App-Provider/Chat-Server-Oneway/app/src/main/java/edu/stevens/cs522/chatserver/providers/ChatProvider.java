@@ -35,7 +35,7 @@ public class ChatProvider extends ContentProvider {
 
     private static final String DATABASE_NAME = "chat.db";
 
-    private static final int DATABASE_VERSION = 1;
+    private static final int DATABASE_VERSION = 3;
 
     private static final String MESSAGES_TABLE = "messages";
 
@@ -111,8 +111,6 @@ public class ChatProvider extends ContentProvider {
 
     @Override
     public String getType(Uri uri) {
-        // TODO: Implement this to handle requests for the MIME type of the data
-        // at the given URI.
         switch (uriMatcher.match(uri)){
             case MESSAGES_ALL_ROWS:
                 return MessageContract.contentType("message");
@@ -159,17 +157,15 @@ public class ChatProvider extends ContentProvider {
         SQLiteDatabase db = dbHelper.getReadableDatabase();
         switch (uriMatcher.match(uri)) {
             case MESSAGES_ALL_ROWS:
-                // TODO: Implement this to handle query of all messages.
                 return db.query(MESSAGES_TABLE, projection, selection, selectionArgs, null, null, sortOrder);
             case PEERS_ALL_ROWS:
-                // TODO: Implement this to handle query of all peers.
                 return db.query(PEERS_TABLE, projection, selection, selectionArgs, null, null, sortOrder);
             case MESSAGES_SINGLE_ROW:
-                selection = MessageContract._ID + "=?";
+                selection = MessageContract._ID;
                 selectionArgs = new String[]{Long.toString(MessageContract.getId(uri))};
                 return db.query(MESSAGES_TABLE, projection, selection, selectionArgs, null, null, sortOrder);
             case PEERS_SINGLE_ROW:
-                selection = PeerContract._ID + "=?";
+                selection = PeerContract._ID;
                 selectionArgs = new String[]{Long.toString(PeerContract.getId(uri))};
                 return db.query(PEERS_TABLE, projection, selection, selectionArgs, null, null, sortOrder);
             default:
@@ -180,7 +176,6 @@ public class ChatProvider extends ContentProvider {
     @Override
     public int update(Uri uri, ContentValues values, String selection,
                       String[] selectionArgs) {
-        // TODO Implement this to handle requests to update one or more rows.
         SQLiteDatabase db = dbHelper.getWritableDatabase();
         switch (uriMatcher.match(uri)) {
             case MESSAGES_ALL_ROWS:
@@ -194,7 +189,6 @@ public class ChatProvider extends ContentProvider {
 
     @Override
     public int delete(Uri uri, String selection, String[] selectionArgs) {
-        // TODO Implement this to handle requests to delete one or more rows.
         SQLiteDatabase db = dbHelper.getWritableDatabase();
         switch (uriMatcher.match(uri)) {
             case MESSAGES_ALL_ROWS:

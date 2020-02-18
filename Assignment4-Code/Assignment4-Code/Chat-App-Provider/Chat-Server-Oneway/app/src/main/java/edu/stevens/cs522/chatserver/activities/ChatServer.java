@@ -102,11 +102,11 @@ public class ChatServer extends Activity implements OnClickListener, LoaderManag
 
         messageList = (ListView) findViewById(R.id.message_list);
         next = (Button) findViewById(R.id.next);
-        // TODO use SimpleCursorAdapter (with flags=0) to display the messages received.
+
         fillData(null);
-        // TODO bind the button for "next" to this activity as listener
+
         next.setOnClickListener(this);
-        // TODO use loader manager to initiate a query of the database
+
         getLoaderManager().initLoader(LOADER_ID, null, this);
 	}
 
@@ -135,10 +135,6 @@ public class ChatServer extends Activity implements OnClickListener, LoaderManag
 
 			Log.i(TAG, "Received from " + message.sender + ": " + message.messageText);
 
-
-            /*
-             * TODO upsert the peer and message into the content provider.
-             */
             // For this assignment, OK to do CP insertion on the main thread.
             final Peer peer = new Peer();
             peer.name = msgContents[0];
@@ -154,8 +150,8 @@ public class ChatServer extends Activity implements OnClickListener, LoaderManag
                     null);
 
             if(c.moveToFirst()){
-                getContentResolver().update(PeerContract.CONTENT_URI, cv, null, null);
                 Peer p = new Peer(c);
+                getContentResolver().update(PeerContract.CONTENT_URI, cv, PeerContract.NAME + "=?", new String[]{p.name});
                 message.senderId = p.id;
             }
             else{
@@ -167,9 +163,7 @@ public class ChatServer extends Activity implements OnClickListener, LoaderManag
             getContentResolver().insert(MessageContract.CONTENT_URI, message_cv);
             //this.messagesAdapter.notifyDataSetChanged();
             getLoaderManager().restartLoader(LOADER_ID, null, this);
-            /*
-             * End TODO
-             */
+
 
 
         } catch (Exception e) {
@@ -213,7 +207,6 @@ public class ChatServer extends Activity implements OnClickListener, LoaderManag
     }
     @Override
     public Loader onCreateLoader(int id, Bundle args) {
-        // TODO use a CursorLoader to initiate a query on the database
         switch (id){
             case LOADER_ID:
                 return new CursorLoader(this, MessageContract.CONTENT_URI,
@@ -227,14 +220,12 @@ public class ChatServer extends Activity implements OnClickListener, LoaderManag
 
     @Override
     public void onLoadFinished(Loader loader, Cursor data) {
-        // TODO populate the UI with the result of querying the provider
         this.messagesAdapter.swapCursor(data);
         this.messagesAdapter.notifyDataSetChanged();
     }
 
     @Override
     public void onLoaderReset(Loader loader) {
-        // TODO reset the UI when the cursor is empty
         this.messagesAdapter.swapCursor(null);
     }
 
@@ -246,7 +237,6 @@ public class ChatServer extends Activity implements OnClickListener, LoaderManag
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         super.onCreateOptionsMenu(menu);
-        // TODO inflate a menu with PEERS and SETTINGS options
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.chatserver_menu, menu);
         return true;

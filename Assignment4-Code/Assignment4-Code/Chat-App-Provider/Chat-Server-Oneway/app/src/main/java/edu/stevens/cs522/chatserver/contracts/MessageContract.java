@@ -37,7 +37,6 @@ public class MessageContract extends BaseContract {
 
     public static final String SENDERID = "senderId";
 
-    // TODO remaining columns in Messages table
 
     private static int messageTextColumn = -1;
 
@@ -56,8 +55,6 @@ public class MessageContract extends BaseContract {
     public static void putMessageText(ContentValues out, String messageText) {
         out.put(MESSAGE_TEXT, messageText);
     }
-
-    // TODO remaining getter and putter operations for other columns
 
     public static long getId(Cursor cursor) {
         if (idColumn < 0) {
