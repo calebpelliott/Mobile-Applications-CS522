@@ -33,7 +33,6 @@ public class AsyncContentResolver extends AsyncQueryHandler {
     }
 
     public void queryAsync(Uri uri, String[] columns, String select, String[] selectArgs, String order, IContinue<Cursor> callback) {
-        // TODO
         this.startQuery(0, callback, uri, columns, select, selectArgs, order);
     }
 

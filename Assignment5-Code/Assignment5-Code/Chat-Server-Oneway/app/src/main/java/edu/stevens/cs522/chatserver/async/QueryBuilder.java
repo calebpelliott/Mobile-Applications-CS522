@@ -3,6 +3,7 @@ package edu.stevens.cs522.chatserver.async;
 import android.app.Activity;
 import android.app.LoaderManager;
 import android.content.Context;
+import android.content.CursorLoader;
 import android.content.Loader;
 import android.database.Cursor;
 import android.net.Uri;
@@ -20,6 +21,10 @@ public class QueryBuilder<T> implements LoaderManager.LoaderCallbacks<Cursor> {
 
     private String tag;
 
+    private Context context;
+
+    private Uri uri;
+
     private String[] columns;
 
     private String select;
@@ -27,6 +32,8 @@ public class QueryBuilder<T> implements LoaderManager.LoaderCallbacks<Cursor> {
     private String[] selectArgs;
 
     private String order;
+
+    private int loaderID;
 
     private IEntityCreator<T> creator;
 
@@ -42,7 +49,16 @@ public class QueryBuilder<T> implements LoaderManager.LoaderCallbacks<Cursor> {
                          int loaderID,
                          IEntityCreator<T> creator,
                          IQueryListener<T> listener) {
-        // TODO
+        this.tag = tag;
+        this.context = context;
+        this.uri = uri;
+        this.columns = columns;
+        this.select = select;
+        this.selectArgs = selectArgs;
+        this.order = order;
+        this.loaderID = loaderID;
+        this.creator = creator;
+        this.listener = listener;
     }
 
     public static <T> void executeQuery(String tag,
@@ -108,17 +124,34 @@ public class QueryBuilder<T> implements LoaderManager.LoaderCallbacks<Cursor> {
 
     @Override
     public Loader onCreateLoader(int id, Bundle args) {
-        // TODO
+        if(id == loaderID){
+            return new CursorLoader(context,
+                    uri,
+                    columns,
+                    select,
+                    selectArgs,
+                    null);
+        }
         return null;
     }
 
     @Override
     public void onLoadFinished(Loader loader, Cursor data) {
-        // TODO
+        if (loader.getId() == loaderID){
+            listener.handleResults(new TypedCursor<T>(data, creator));
+        }
+        else{
+            throw new IllegalStateException("Unexpected loader callback");
+        }
     }
 
     @Override
     public void onLoaderReset(Loader loader) {
-        // TODO
+        if (loader.getId() == loaderID){
+            listener.closeResults();
+        }
+        else{
+            throw new IllegalStateException("Unexpected loader callback");
+        }
     }
 }
