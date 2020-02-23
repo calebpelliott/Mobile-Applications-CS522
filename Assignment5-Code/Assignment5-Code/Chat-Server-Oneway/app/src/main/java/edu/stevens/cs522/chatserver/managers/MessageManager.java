@@ -1,10 +1,17 @@
 package edu.stevens.cs522.chatserver.managers;
 
+import android.app.Activity;
+import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
+import android.net.Uri;
 
+import edu.stevens.cs522.chatserver.async.IContinue;
 import edu.stevens.cs522.chatserver.async.IEntityCreator;
 import edu.stevens.cs522.chatserver.async.IQueryListener;
+import edu.stevens.cs522.chatserver.async.QueryBuilder;
+import edu.stevens.cs522.chatserver.contracts.MessageContract;
+import edu.stevens.cs522.chatserver.contracts.PeerContract;
 import edu.stevens.cs522.chatserver.entities.Message;
 import edu.stevens.cs522.chatserver.entities.Peer;
 
@@ -16,6 +23,8 @@ import edu.stevens.cs522.chatserver.entities.Peer;
 public class MessageManager extends Manager<Message> {
 
     private static final int LOADER_ID = 1;
+
+    private static final String TAG = "MessageManager";
 
     private static final IEntityCreator<Message> creator = new IEntityCreator<Message>() {
         @Override
@@ -29,16 +38,32 @@ public class MessageManager extends Manager<Message> {
     }
 
     public void getAllMessagesAsync(IQueryListener<Message> listener) {
-        // TODO use QueryBuilder to complete this
+        QueryBuilder.executeQuery(TAG, (Activity) context, MessageContract.CONTENT_URI, LOADER_ID, creator, listener);
     }
 
     public void getMessagesByPeerAsync(Peer peer, IQueryListener<Message> listener) {
-        // TODO use QueryBuilder to complete this
-        // Remember to reset the loader!
+        QueryBuilder.reexecuteQuery(TAG,
+                (Activity) context,
+                PeerContract.CONTENT_URI,
+                MessageContract.PROJECTION,
+                MessageContract.SENDERID + "=?",
+                new String[]{Long.toString(peer.id)},
+                null,
+                LOADER_ID,
+                creator,
+                listener);
     }
 
-    public void persistAsync(Message Message) {
-        // TODO use AsyncContentResolver to complete this
+    public void persistAsync(final Message message) {
+        ContentValues cv = new ContentValues();
+        message.writeToProvider(cv);
+        getAsyncResolver().insertAsync(MessageContract.CONTENT_URI, cv,
+                new IContinue<Uri>() {
+                    //@Override
+                    public void kontinue(Uri value) {
+                        message.id = MessageContract.getId(value);
+                    }
+                });
     }
 
 }

@@ -34,9 +34,11 @@ public class MessageContract extends BaseContract {
 
     public static final String SENDER = "sender";
 
+    public static final String SENDERID = "senderId";
+
     // TODO remaining columns in Messages table
 
-    public static final String[] PROJECTION = {ID, MESSAGE_TEXT, TIMESTAMP, SENDER };
+    public static final String[] PROJECTION = {ID, MESSAGE_TEXT, TIMESTAMP, SENDER, SENDERID };
 
     private int messageTextColumn = -1;
 

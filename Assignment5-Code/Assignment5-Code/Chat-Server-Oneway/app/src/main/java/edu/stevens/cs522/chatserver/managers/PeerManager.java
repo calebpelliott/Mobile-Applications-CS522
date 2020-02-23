@@ -1,13 +1,18 @@
 package edu.stevens.cs522.chatserver.managers;
 
+import android.app.Activity;
+import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
+import android.net.Uri;
 import android.widget.CursorAdapter;
 
 import edu.stevens.cs522.chatserver.async.AsyncContentResolver;
 import edu.stevens.cs522.chatserver.async.IContinue;
 import edu.stevens.cs522.chatserver.async.IEntityCreator;
 import edu.stevens.cs522.chatserver.async.IQueryListener;
+import edu.stevens.cs522.chatserver.async.QueryBuilder;
+import edu.stevens.cs522.chatserver.contracts.PeerContract;
 import edu.stevens.cs522.chatserver.entities.Peer;
 
 
@@ -18,6 +23,8 @@ import edu.stevens.cs522.chatserver.entities.Peer;
 public class PeerManager extends Manager<Peer> {
 
     private static final int LOADER_ID = 2;
+
+    private static final String TAG = "PeerManager";
 
     private static final IEntityCreator<Peer> creator = new IEntityCreator<Peer>() {
         @Override
@@ -31,13 +38,13 @@ public class PeerManager extends Manager<Peer> {
     }
 
     public void getAllPeersAsync(IQueryListener<Peer> listener) {
-        // TODO get a list of all peers in the database
-        // use QueryBuilder to complete this
+        QueryBuilder.executeQuery(TAG, (Activity) context, PeerContract.CONTENT_URI, LOADER_ID, creator, listener);
     }
 
-    public void persistAsync(Peer peer, IContinue<Long> callback) {
-        // TODO upsert the peer into the database
-        // use AsyncContentResolver to complete this
+    public void persistAsync(Peer peer, IContinue<Uri> callback) { //changed callback to return uri
+        ContentValues cv = new ContentValues();
+        peer.writeToProvider(cv);
+        getAsyncResolver().insertAsync(PeerContract.CONTENT_URI, cv, callback);
     }
 
 }
