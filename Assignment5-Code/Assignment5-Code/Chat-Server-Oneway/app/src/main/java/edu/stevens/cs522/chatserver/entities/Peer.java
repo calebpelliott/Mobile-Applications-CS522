@@ -8,6 +8,8 @@ import android.os.Parcelable;
 import java.net.InetAddress;
 import java.util.Date;
 
+import edu.stevens.cs522.chatserver.contracts.PeerContract;
+
 /**
  * Created by dduggan.
  */
@@ -29,16 +31,24 @@ public class Peer implements Parcelable, Persistable {
     }
 
     public Peer(Cursor cursor) {
-        // TODO
+        id = PeerContract.getId(cursor);
+        name = PeerContract.getName(cursor);
+        timestamp = PeerContract.getTimestamp(cursor);
+        address = PeerContract.getAddress(cursor);
     }
 
     public Peer(Parcel in) {
-        // TODO
+        id = in.readLong();
+        name = in.readString();
+        timestamp = (Date) in.readSerializable();
+        address = (InetAddress) in.readSerializable();
     }
 
     @Override
     public void writeToProvider(ContentValues out) {
-        // TODO
+        PeerContract.putName(out, name);
+        PeerContract.putTimestamp(out, timestamp);
+        PeerContract.putAddress(out, address);
     }
 
     @Override
@@ -48,21 +58,23 @@ public class Peer implements Parcelable, Persistable {
 
     @Override
     public void writeToParcel(Parcel out, int flags) {
-        // TODO
+        out.writeLong(id);
+        out.writeString(name);
+        out.writeSerializable(timestamp); //Avoid using serializable
+        out.writeSerializable(address);
     }
 
     public static final Creator<Peer> CREATOR = new Creator<Peer>() {
 
         @Override
         public Peer createFromParcel(Parcel source) {
-            // TODO
-            return null;
+            return new Peer(source);
         }
 
         @Override
         public Peer[] newArray(int size) {
             // TODO
-            return null;
+            return new Peer[size];
         }
 
     };

@@ -25,6 +25,9 @@
         <activity
             android:name=".activities.ViewPeerActivity"
             android:label="@string/title_activity_view_peer"></activity>
+        <provider
+            android:authorities="edu.stevens.cs522.chatserver"
+            android:name=".providers.ChatProvider"/>
     </application>
 
 </manifest>

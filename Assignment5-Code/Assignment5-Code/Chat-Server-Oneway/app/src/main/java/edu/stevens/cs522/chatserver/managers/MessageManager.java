@@ -24,7 +24,7 @@ public class MessageManager extends Manager<Message> {
 
     private static final int LOADER_ID = 1;
 
-    private static final String TAG = "MessageManager";
+    private static final String TAG = MessageManager.class.getCanonicalName();
 
     private static final IEntityCreator<Message> creator = new IEntityCreator<Message>() {
         @Override
@@ -59,7 +59,7 @@ public class MessageManager extends Manager<Message> {
         message.writeToProvider(cv);
         getAsyncResolver().insertAsync(MessageContract.CONTENT_URI, cv,
                 new IContinue<Uri>() {
-                    //@Override
+                    @Override
                     public void kontinue(Uri value) {
                         message.id = MessageContract.getId(value);
                     }

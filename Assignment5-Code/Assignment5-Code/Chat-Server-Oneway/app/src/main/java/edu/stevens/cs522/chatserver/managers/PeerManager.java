@@ -24,7 +24,7 @@ public class PeerManager extends Manager<Peer> {
 
     private static final int LOADER_ID = 2;
 
-    private static final String TAG = "PeerManager";
+    private static final String TAG = PeerManager.class.getCanonicalName();
 
     private static final IEntityCreator<Peer> creator = new IEntityCreator<Peer>() {
         @Override

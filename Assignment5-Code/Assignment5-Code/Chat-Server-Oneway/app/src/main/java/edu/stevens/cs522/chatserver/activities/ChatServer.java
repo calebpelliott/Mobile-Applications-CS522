@@ -11,10 +11,13 @@
 package edu.stevens.cs522.chatserver.activities;
 
 import android.app.Activity;
+import android.content.Intent;
+import android.database.Cursor;
 import android.os.Bundle;
 import android.os.StrictMode;
 import android.util.Log;
 import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -29,6 +32,7 @@ import java.util.Date;
 import edu.stevens.cs522.base.DatagramSendReceive;
 import edu.stevens.cs522.chatserver.R;
 import edu.stevens.cs522.chatserver.async.IQueryListener;
+import edu.stevens.cs522.chatserver.contracts.MessageContract;
 import edu.stevens.cs522.chatserver.entities.Message;
 import edu.stevens.cs522.chatserver.entities.Peer;
 import edu.stevens.cs522.chatserver.managers.MessageManager;
@@ -91,11 +95,16 @@ public class ChatServer extends Activity implements OnClickListener, IQueryListe
         setContentView(R.layout.messages);
 
         // TODO use SimpleCursorAdapter to display the messages received.
-
+        messageList = (ListView) findViewById(R.id.message_list);
+        fillData(null);
         // TODO bind the button for "next" to this activity as listener
-
+        next = (Button) findViewById(R.id.next);
+        next.setOnClickListener(this);
         // TODO create the message and peer managers, and initiate a query for all messages
+        messageManager = new MessageManager(this);
+        peerManager = new PeerManager(this);
 
+        messageManager.getAllMessagesAsync(this);
 	}
 
     public void onClick(View v) {
@@ -105,8 +114,15 @@ public class ChatServer extends Activity implements OnClickListener, IQueryListe
         DatagramPacket receivePacket = new DatagramPacket(receiveData, receiveData.length);
 
         try {
-
-            serverSocket.receive(receivePacket);
+            int t = 5;
+            Message message = new Message();
+            message.senderId = 50;
+            message.sender = "name";
+            message.messageText = "my message";
+            message.timestamp = new Date();
+            messageManager.persistAsync(message);
+            int a = 7;
+            /*serverSocket.receive(receivePacket);
             Log.i(TAG, "Received a packet");
 
             InetAddress sourceIPAddress = receivePacket.getAddress();
@@ -124,7 +140,7 @@ public class ChatServer extends Activity implements OnClickListener, IQueryListe
             Peer sender = new Peer();
             sender.name = message.sender;
             sender.timestamp = message.timestamp;
-            sender.address = receivePacket.getAddress();
+            sender.address = receivePacket.getAddress();*/
 
             // TODO upsert the peer and message into the content provider.
             // For this assignment, must use managers to do this asynchronously
@@ -155,18 +171,35 @@ public class ChatServer extends Activity implements OnClickListener, IQueryListe
         return socketOK;
     }
 
+    private void fillData(Cursor c){
+        String[] to = new String[]{MessageContract.SENDER,
+                MessageContract.MESSAGE_TEXT};
+        int[] from = new int[]{android.R.id.text1, android.R.id.text2};
+        messagesAdapter = new SimpleCursorAdapter(
+                this,
+                android.R.layout.simple_list_item_2,
+                c,
+                to,
+                from,
+                0);
+
+        ListView lv = (ListView) findViewById(R.id.message_list);
+        lv.setAdapter(messagesAdapter);
+    }
+
     /**
      * Callbacks for query builder (which itself handles LM callbacks)
      */
 
     @Override
     public void handleResults(TypedCursor<Message> results) {
-        // TODO swap the cursor into the adapter
+        messagesAdapter.swapCursor(results.getCursor());
+        messagesAdapter.notifyDataSetChanged();
     }
 
     @Override
     public void closeResults() {
-        // TODO set the current cursor to be null
+        messagesAdapter.swapCursor(null);
     }
 
     public void onDestroy() {
@@ -177,9 +210,8 @@ public class ChatServer extends Activity implements OnClickListener, IQueryListe
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         super.onCreateOptionsMenu(menu);
-        // TODO inflate a menu with PEERS and SETTINGS options
-
-
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.chatserver_menu, menu);
         return true;
     }
 
@@ -188,8 +220,9 @@ public class ChatServer extends Activity implements OnClickListener, IQueryListe
         super.onOptionsItemSelected(item);
         switch(item.getItemId()) {
 
-            // TODO PEERS provide the UI for viewing list of peers
             case R.id.peers:
+                Intent intent = new Intent(this, ViewPeersActivity.class);
+                startActivity(intent);
                 break;
 
             default:
