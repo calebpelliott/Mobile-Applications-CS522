@@ -13,6 +13,7 @@ package edu.stevens.cs522.chatserver.activities;
 import android.app.Activity;
 import android.content.Intent;
 import android.database.Cursor;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.StrictMode;
 import android.util.Log;
@@ -31,8 +32,10 @@ import java.util.Date;
 
 import edu.stevens.cs522.base.DatagramSendReceive;
 import edu.stevens.cs522.chatserver.R;
+import edu.stevens.cs522.chatserver.async.IContinue;
 import edu.stevens.cs522.chatserver.async.IQueryListener;
 import edu.stevens.cs522.chatserver.contracts.MessageContract;
+import edu.stevens.cs522.chatserver.contracts.PeerContract;
 import edu.stevens.cs522.chatserver.entities.Message;
 import edu.stevens.cs522.chatserver.entities.Peer;
 import edu.stevens.cs522.chatserver.managers.MessageManager;
@@ -94,13 +97,13 @@ public class ChatServer extends Activity implements OnClickListener, IQueryListe
 
         setContentView(R.layout.messages);
 
-        // TODO use SimpleCursorAdapter to display the messages received.
+
         messageList = (ListView) findViewById(R.id.message_list);
         fillData(null);
-        // TODO bind the button for "next" to this activity as listener
+
         next = (Button) findViewById(R.id.next);
         next.setOnClickListener(this);
-        // TODO create the message and peer managers, and initiate a query for all messages
+
         messageManager = new MessageManager(this);
         peerManager = new PeerManager(this);
 
@@ -114,15 +117,7 @@ public class ChatServer extends Activity implements OnClickListener, IQueryListe
         DatagramPacket receivePacket = new DatagramPacket(receiveData, receiveData.length);
 
         try {
-            int t = 5;
-            Message message = new Message();
-            message.senderId = 50;
-            message.sender = "name";
-            message.messageText = "my message";
-            message.timestamp = new Date();
-            messageManager.persistAsync(message);
-            int a = 7;
-            /*serverSocket.receive(receivePacket);
+            serverSocket.receive(receivePacket);
             Log.i(TAG, "Received a packet");
 
             InetAddress sourceIPAddress = receivePacket.getAddress();
@@ -135,16 +130,18 @@ public class ChatServer extends Activity implements OnClickListener, IQueryListe
             message.timestamp = new Date(Long.parseLong(msgContents[1]));
             message.messageText = msgContents[2];
 
+            messageManager.persistAsync(message);
             Log.i(TAG, "Received from " + message.sender + ": " + message.messageText);
 
             Peer sender = new Peer();
             sender.name = message.sender;
             sender.timestamp = message.timestamp;
-            sender.address = receivePacket.getAddress();*/
+            sender.address = receivePacket.getAddress();
 
-            // TODO upsert the peer and message into the content provider.
-            // For this assignment, must use managers to do this asynchronously
+            peerManager.persistAsync(sender,
+                    null);
 
+            //messageManager.getAllMessagesAsync(this);
 
         } catch (Exception e) {
 

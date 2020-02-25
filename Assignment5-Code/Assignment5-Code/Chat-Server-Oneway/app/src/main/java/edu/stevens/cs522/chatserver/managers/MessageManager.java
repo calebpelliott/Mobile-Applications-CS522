@@ -38,16 +38,16 @@ public class MessageManager extends Manager<Message> {
     }
 
     public void getAllMessagesAsync(IQueryListener<Message> listener) {
-        QueryBuilder.executeQuery(TAG, (Activity) context, MessageContract.CONTENT_URI, LOADER_ID, creator, listener);
+        QueryBuilder.reexecuteQuery(TAG, (Activity) context, MessageContract.CONTENT_URI, LOADER_ID, creator, listener);
     }
 
     public void getMessagesByPeerAsync(Peer peer, IQueryListener<Message> listener) {
         QueryBuilder.reexecuteQuery(TAG,
                 (Activity) context,
-                PeerContract.CONTENT_URI,
+                MessageContract.CONTENT_URI,
                 MessageContract.PROJECTION,
-                MessageContract.SENDERID + "=?",
-                new String[]{Long.toString(peer.id)},
+                MessageContract.SENDER + "=?",
+                new String[]{peer.name},
                 null,
                 LOADER_ID,
                 creator,
@@ -57,13 +57,9 @@ public class MessageManager extends Manager<Message> {
     public void persistAsync(final Message message) {
         ContentValues cv = new ContentValues();
         message.writeToProvider(cv);
-        getAsyncResolver().insertAsync(MessageContract.CONTENT_URI, cv,
-                new IContinue<Uri>() {
-                    @Override
-                    public void kontinue(Uri value) {
-                        message.id = MessageContract.getId(value);
-                    }
-                });
+        getAsyncResolver().insertAsync(MessageContract.CONTENT_URI,
+                cv,
+                null);
     }
 
 }

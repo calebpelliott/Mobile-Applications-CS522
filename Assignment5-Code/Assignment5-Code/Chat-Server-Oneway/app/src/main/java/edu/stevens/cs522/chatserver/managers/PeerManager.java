@@ -41,10 +41,34 @@ public class PeerManager extends Manager<Peer> {
         QueryBuilder.executeQuery(TAG, (Activity) context, PeerContract.CONTENT_URI, LOADER_ID, creator, listener);
     }
 
-    public void persistAsync(Peer peer, IContinue<Uri> callback) { //changed callback to return uri
+    public void persistAsync(final Peer peer, final IContinue<Uri> callback) { //changed callback to return uri
         ContentValues cv = new ContentValues();
         peer.writeToProvider(cv);
-        getAsyncResolver().insertAsync(PeerContract.CONTENT_URI, cv, callback);
+
+        getAsyncResolver().queryAsync(PeerContract.CONTENT_URI,
+                PeerContract.PROJECTION,
+                PeerContract.NAME + "=?",
+                new String[]{peer.name},
+                null,
+                new IContinue<Cursor>() {
+                    @Override
+                    public void kontinue(Cursor value) {
+                        ContentValues cv = new ContentValues();
+                        peer.writeToProvider(cv);
+
+                        if (value.moveToFirst()){
+                            getAsyncResolver().updateAsync(PeerContract.CONTENT_URI,
+                                    cv,
+                                    PeerContract.NAME + "=?",
+                                    new String[]{peer.name});
+                        }
+                        else{
+                            getAsyncResolver().insertAsync(PeerContract.CONTENT_URI,
+                                    cv,
+                                    callback);
+                        }
+                    }
+                });
     }
 
 }

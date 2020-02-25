@@ -73,7 +73,6 @@ public class Peer implements Parcelable, Persistable {
 
         @Override
         public Peer[] newArray(int size) {
-            // TODO
             return new Peer[size];
         }
 

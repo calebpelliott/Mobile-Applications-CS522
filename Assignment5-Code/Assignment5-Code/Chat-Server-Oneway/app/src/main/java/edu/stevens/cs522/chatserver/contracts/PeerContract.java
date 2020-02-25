@@ -31,6 +31,7 @@ public class PeerContract extends BaseContract {
 
     public static final String CONTENT_PATH_ITEM = CONTENT_PATH(CONTENT_URI("#"));
 
+    public static final String ID = _ID;
 
     public final static String NAME = "NAME";
 
@@ -38,6 +39,7 @@ public class PeerContract extends BaseContract {
 
     public final static String ADDRESS = "ADDRESS";
 
+    public static final String[] PROJECTION = {ID, NAME, TIMESTAMP, ADDRESS};
 
     private static int idColumn = -1;
 

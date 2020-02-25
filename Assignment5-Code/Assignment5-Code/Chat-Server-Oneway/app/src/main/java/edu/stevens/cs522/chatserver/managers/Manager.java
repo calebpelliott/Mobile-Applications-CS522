@@ -52,8 +52,6 @@ public abstract class Manager<T> {
         return asyncResolver;
     }
 
-    // TODO Provide operations for executing queries (see lectures)
-
     protected void executeSimpleQuery(Uri uri,
                                       ISimpleQueryListener<T> listener) {
         SimpleQueryBuilder.executeQuery(tag,(Activity) context, uri, creator, listener);

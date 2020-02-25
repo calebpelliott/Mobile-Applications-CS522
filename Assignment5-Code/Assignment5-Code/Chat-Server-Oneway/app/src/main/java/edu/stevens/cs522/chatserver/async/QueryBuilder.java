@@ -17,8 +17,6 @@ import edu.stevens.cs522.chatserver.managers.TypedCursor;
 
 public class QueryBuilder<T> implements LoaderManager.LoaderCallbacks<Cursor> {
 
-    // TODO complete the implementation of this
-
     private String tag;
 
     private Context context;
