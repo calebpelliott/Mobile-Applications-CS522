@@ -130,7 +130,6 @@ public class ChatServer extends Activity implements OnClickListener, IQueryListe
             message.timestamp = new Date(Long.parseLong(msgContents[1]));
             message.messageText = msgContents[2];
 
-            messageManager.persistAsync(message);
             Log.i(TAG, "Received from " + message.sender + ": " + message.messageText);
 
             Peer sender = new Peer();
@@ -139,9 +138,13 @@ public class ChatServer extends Activity implements OnClickListener, IQueryListe
             sender.address = receivePacket.getAddress();
 
             peerManager.persistAsync(sender,
-                    null);
-
-            //messageManager.getAllMessagesAsync(this);
+                    new IContinue<Uri>() {
+                        @Override
+                        public void kontinue(Uri value) {
+                            message.senderId = PeerContract.getId(value);
+                            messageManager.persistAsync(message);
+                        }
+                    });
 
         } catch (Exception e) {
 
@@ -191,7 +194,6 @@ public class ChatServer extends Activity implements OnClickListener, IQueryListe
     @Override
     public void handleResults(TypedCursor<Message> results) {
         messagesAdapter.swapCursor(results.getCursor());
-        messagesAdapter.notifyDataSetChanged();
     }
 
     @Override

@@ -157,20 +157,27 @@ public class ChatProvider extends ContentProvider {
         Cursor cursor = null;
         switch (uriMatcher.match(uri)) {
             case MESSAGES_ALL_ROWS:
-                return db.query(MESSAGES_TABLE, projection, selection, selectionArgs, null, null, sortOrder);
+                cursor = db.query(MESSAGES_TABLE, projection, selection, selectionArgs, null, null, sortOrder);
+                break;
             case PEERS_ALL_ROWS:
-                return db.query(PEERS_TABLE, projection, selection, selectionArgs, null, null, sortOrder);
+                cursor = db.query(PEERS_TABLE, projection, selection, selectionArgs, null, null, sortOrder);
+                break;
             case MESSAGES_SINGLE_ROW:
                 selection = MessageContract._ID;
                 selectionArgs = new String[]{Long.toString(MessageContract.getId(uri))};
-                return db.query(MESSAGES_TABLE, projection, selection, selectionArgs, null, null, sortOrder);
+                cursor = db.query(MESSAGES_TABLE, projection, selection, selectionArgs, null, null, sortOrder);
+                break;
             case PEERS_SINGLE_ROW:
                 selection = PeerContract._ID;
                 selectionArgs = new String[]{Long.toString(PeerContract.getId(uri))};
-                return db.query(PEERS_TABLE, projection, selection, selectionArgs, null, null, sortOrder);
+                cursor = db.query(PEERS_TABLE, projection, selection, selectionArgs, null, null, sortOrder);
+                break;
             default:
                 throw new IllegalStateException("query: bad case");
         }
+        ContentResolver cr = getContext().getContentResolver();
+        cursor.setNotificationUri(cr, uri);
+        return cursor;
     }
 
     @Override

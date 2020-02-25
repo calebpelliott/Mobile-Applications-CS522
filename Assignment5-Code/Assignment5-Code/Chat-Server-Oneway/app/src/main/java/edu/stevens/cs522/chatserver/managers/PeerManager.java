@@ -61,6 +61,7 @@ public class PeerManager extends Manager<Peer> {
                                     cv,
                                     PeerContract.NAME + "=?",
                                     new String[]{peer.name});
+                            callback.kontinue(PeerContract.CONTENT_URI(PeerContract.getId(value)));
                         }
                         else{
                             getAsyncResolver().insertAsync(PeerContract.CONTENT_URI,
