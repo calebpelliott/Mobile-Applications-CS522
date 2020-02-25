@@ -38,7 +38,7 @@ public class MessageManager extends Manager<Message> {
     }
 
     public void getAllMessagesAsync(IQueryListener<Message> listener) {
-        QueryBuilder.reexecuteQuery(TAG, (Activity) context, MessageContract.CONTENT_URI, LOADER_ID, creator, listener);
+        QueryBuilder.executeQuery(TAG, (Activity) context, MessageContract.CONTENT_URI, LOADER_ID, creator, listener);
     }
 
     public void getMessagesByPeerAsync(Peer peer, IQueryListener<Message> listener) {
