@@ -154,7 +154,7 @@ public class ChatService extends Service implements IChatService {
 
 
                 // End todo
-                receiver.send(RESULT_OK, null);
+
                 DatagramPacket sendPacket = new DatagramPacket(sendData,
                         sendData.length, destAddr, destPort);
 
