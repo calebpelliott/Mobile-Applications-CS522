@@ -31,6 +31,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.SimpleCursorAdapter;
+import android.widget.Toast;
 
 import java.net.InetAddress;
 
@@ -214,44 +215,23 @@ public class ChatActivity extends Activity implements OnClickListener, IQueryLis
      * Show a text message when notified that sending a message succeeded or failed
      */
     public void onReceiveResult(int resultCode, Bundle data) {
-        int icon = R.mipmap.ic_launcher;
-        String tickerText = "";
-        long when = System.currentTimeMillis();
+        Context context = getApplicationContext();
+        String toastText = "";
+        int duration = Toast.LENGTH_SHORT;
 
         switch (resultCode) {
             case RESULT_OK:
                 // TODO show a success toast message
-                tickerText = "Message: SUCCESS";
+                toastText = "Message: SUCCESS";
                 break;
             default:
                 // TODO show a failure toast message
-                tickerText = "Message: FAILED";
+                toastText = "Message: FAILED";
                 break;
         }
-        Notification.Builder notification = new Notification.Builder(this)
-                .setContentTitle("ChatApp")
-                .setContentText(tickerText)
-                .setSmallIcon(R.mipmap.ic_launcher);
 
-        Intent intent = new Intent(this, ChatActivity.class);
-        PendingIntent launchIntent = PendingIntent.getActivity(this, 0, intent, 0);
-
-        notification.setContentIntent(launchIntent);
-
-        String svcName = Context.NOTIFICATION_SERVICE;
-        NotificationManager notificationManager;
-        notificationManager = (NotificationManager)getSystemService(svcName);
-        notificationManager.notify(1, notification.build());
-
-
-
-        /*Context context = getApplicationContext();
-        String title = "TITLE";
-        String text = "TEXT";
-
-        Intent intent = new Intent(this, ChatActivity.class);
-        PendingIntent launchIntent = PendingIntent.getActivity(context, 0, intent, 0);
-        notification.set*/
+        Toast toast = Toast.makeText(context, toastText, duration);
+        toast.show();
     }
 
     @Override
