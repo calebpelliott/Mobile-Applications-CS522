@@ -11,7 +11,11 @@
 package edu.stevens.cs522.chat.activities;
 
 import android.app.Activity;
+import android.app.Notification;
+import android.app.NotificationManager;
+import android.app.PendingIntent;
 import android.content.ComponentName;
+import android.content.Context;
 import android.content.Intent;
 import android.content.ServiceConnection;
 import android.os.Bundle;
@@ -96,6 +100,16 @@ public class ChatActivity extends Activity implements OnClickListener, IQueryLis
 
         setContentView(R.layout.messages);
 
+        //TODO initialize UI
+        destinationHost = (EditText) findViewById(R.id.destination_host);
+
+        destinationPort = (EditText) findViewById(R.id.destination_port);
+
+        messageText =     (EditText) findViewById(R.id.message_text);
+
+        sendButton =      (Button) findViewById(R.id.send_button);
+        sendButton.setOnClickListener(this);
+
         // TODO use SimpleCursorAdapter to display the messages received.
 
 
@@ -103,20 +117,23 @@ public class ChatActivity extends Activity implements OnClickListener, IQueryLis
 
 
         // TODO initiate binding to the service
-
+        Intent bindIntent = new Intent(this, ChatService.class);
+        bindService(bindIntent, this, Context.BIND_AUTO_CREATE);
 
         // TODO initialize sendResultReceiver (for receiving notification of message sent)
-
+        sendResultReceiver = new ResultReceiverWrapper(new Handler());
     }
 
 	public void onResume() {
         super.onResume();
         // TODO register result receiver
+        sendResultReceiver.setReceiver(this);
     }
 
     public void onPause() {
         super.onPause();
         // TODO unregister result receiver
+        sendResultReceiver.setReceiver(null);
     }
 
     public void onDestroy() {
@@ -126,8 +143,8 @@ public class ChatActivity extends Activity implements OnClickListener, IQueryLis
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         super.onCreateOptionsMenu(menu);
-        // TODO inflate a menu with PEERS and SETTINGS options
-
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.chatserver_menu, menu);
 
         return true;
     }
@@ -139,6 +156,8 @@ public class ChatActivity extends Activity implements OnClickListener, IQueryLis
 
             // TODO PEERS provide the UI for viewing list of peers
             case R.id.peers:
+                Intent peerIntent = new Intent(this, ViewPeersActivity.class);
+                startActivity(peerIntent);
                 break;
 
             // TODO SETTINGS provide the UI for settings
@@ -182,7 +201,7 @@ public class ChatActivity extends Activity implements OnClickListener, IQueryLis
             username = Settings.getChatName(this);
 
             // TODO use chatService to send the message
-
+            chatService.send(destAddr, destPort, username, message, sendResultReceiver);
 
             Log.i(TAG, "Sent message: " + message);
 
@@ -195,29 +214,60 @@ public class ChatActivity extends Activity implements OnClickListener, IQueryLis
      * Show a text message when notified that sending a message succeeded or failed
      */
     public void onReceiveResult(int resultCode, Bundle data) {
+        int icon = R.mipmap.ic_launcher;
+        String tickerText = "";
+        long when = System.currentTimeMillis();
+
         switch (resultCode) {
             case RESULT_OK:
                 // TODO show a success toast message
+                tickerText = "Message: SUCCESS";
                 break;
             default:
                 // TODO show a failure toast message
+                tickerText = "Message: FAILED";
                 break;
         }
+        Notification.Builder notification = new Notification.Builder(this)
+                .setContentTitle("ChatApp")
+                .setContentText(tickerText)
+                .setSmallIcon(R.mipmap.ic_launcher);
+
+        Intent intent = new Intent(this, ChatActivity.class);
+        PendingIntent launchIntent = PendingIntent.getActivity(this, 0, intent, 0);
+
+        notification.setContentIntent(launchIntent);
+
+        String svcName = Context.NOTIFICATION_SERVICE;
+        NotificationManager notificationManager;
+        notificationManager = (NotificationManager)getSystemService(svcName);
+        notificationManager.notify(1, notification.build());
+
+
+
+        /*Context context = getApplicationContext();
+        String title = "TITLE";
+        String text = "TEXT";
+
+        Intent intent = new Intent(this, ChatActivity.class);
+        PendingIntent launchIntent = PendingIntent.getActivity(context, 0, intent, 0);
+        notification.set*/
     }
 
     @Override
     public void handleResults(TypedCursor<Message> results) {
-        // TODO
+        messagesAdapter.swapCursor(results.getCursor());
     }
 
     @Override
     public void closeResults() {
-        // TODO
+        messagesAdapter.swapCursor(null);
     }
 
     @Override
     public void onServiceConnected(ComponentName name, IBinder service) {
         // TODO initialize chatService
+        chatService = ((ChatService.ChatBinder)service).getService();
     }
 
     @Override

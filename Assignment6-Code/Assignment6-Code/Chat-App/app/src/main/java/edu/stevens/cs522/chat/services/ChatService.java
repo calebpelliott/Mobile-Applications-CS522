@@ -8,7 +8,6 @@ import android.os.Handler;
 import android.os.HandlerThread;
 import android.os.IBinder;
 import android.os.Looper;
-import android.os.Process;
 import android.os.ResultReceiver;
 import android.util.Log;
 
@@ -27,6 +26,7 @@ import edu.stevens.cs522.chat.managers.MessageManager;
 import edu.stevens.cs522.chat.managers.PeerManager;
 
 import static android.app.Activity.RESULT_OK;
+import static android.os.Process.THREAD_PRIORITY_BACKGROUND;
 
 
 public class ChatService extends Service implements IChatService {
@@ -70,8 +70,10 @@ public class ChatService extends Service implements IChatService {
         }
 
         // TODO initialize the thread that sends messages
-
-
+        HandlerThread sendThread = new HandlerThread(SEND_TAG, THREAD_PRIORITY_BACKGROUND);
+        sendThread.start();
+        Looper sendLooper = sendThread.getLooper();
+        sendHandler = new SendHandler(sendLooper);
         // end TODO
 
         receiveThread = new Thread(new ReceiverThread());
@@ -104,7 +106,15 @@ public class ChatService extends Service implements IChatService {
     public void send(InetAddress destAddress, int destPort, String sender, String messageText, ResultReceiver receiver) {
         android.os.Message message = sendHandler.obtainMessage();
         // TODO send the message to the sending thread (add a bundle with params)
+        Bundle bundle = new Bundle();
+        bundle.putSerializable(SendHandler.DEST_ADDRESS, destAddress);
+        bundle.putInt(SendHandler.DEST_PORT, destPort);
+        bundle.putString(SendHandler.CHAT_NAME, sender);
+        bundle.putString(SendHandler.CHAT_MESSAGE, messageText);
+        bundle.putParcelable(SendHandler.RECEIVER, receiver);
 
+        message.setData(bundle);
+        sendHandler.sendMessage(message);
     }
 
 
@@ -132,14 +142,19 @@ public class ChatService extends Service implements IChatService {
 
                 ResultReceiver receiver;
 
+                String messageText = "temp";
+
                 Bundle data = message.getData();
 
                 // TODO get data from message (including result receiver)
-
+                destAddr = (InetAddress)data.getSerializable(DEST_ADDRESS);
+                destPort = data.getInt(DEST_PORT);
+                sendData = data.getString(CHAT_MESSAGE).getBytes();
+                receiver = data.getParcelable(RECEIVER);
 
 
                 // End todo
-
+                receiver.send(RESULT_OK, null);
                 DatagramPacket sendPacket = new DatagramPacket(sendData,
                         sendData.length, destAddr, destPort);
 

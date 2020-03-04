@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Chat App</string>
+    <string name="app_name">Caleb Elliott Chat App</string>
     <string name="user_name">Username</string>
     <string name="user_name_summary">Name by which user is identified in chat messages</string>
     <string name="user_name_default">_default</string>
