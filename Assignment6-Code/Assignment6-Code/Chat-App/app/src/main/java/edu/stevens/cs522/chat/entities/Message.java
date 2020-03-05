@@ -7,6 +7,7 @@ import android.os.Parcelable;
 
 import java.util.Date;
 
+import edu.stevens.cs522.chat.contracts.MessageContract;
 import edu.stevens.cs522.chat.entities.Persistable;
 
 /**
@@ -29,16 +30,27 @@ public class Message implements Parcelable, Persistable {
     }
 
     public Message(Cursor cursor) {
-        // TODO
+        id = MessageContract.getId(cursor);
+        messageText = MessageContract.getMessageText(cursor);
+        timestamp = MessageContract.getTimestamp(cursor);
+        sender = MessageContract.getSender(cursor);
+        senderId = MessageContract.getSenderId(cursor);
     }
 
     public Message(Parcel in) {
-        // TODO
+        id = in.readLong();
+        messageText = in.readString();
+        timestamp = (Date) in.readSerializable();
+        sender = in.readString();
+        senderId = in.readLong();
     }
 
     @Override
     public void writeToProvider(ContentValues out) {
-        // TODO
+        MessageContract.putMessageText(out, messageText);
+        MessageContract.putTimestamp(out, timestamp);
+        MessageContract.putSender(out, sender);
+        MessageContract.putSenderId(out, senderId);
     }
 
     @Override
@@ -48,21 +60,23 @@ public class Message implements Parcelable, Persistable {
 
     @Override
     public void writeToParcel(Parcel dest, int flags) {
-        // TODO
+        dest.writeLong(id);
+        dest.writeString(messageText);
+        dest.writeSerializable(timestamp);
+        dest.writeString(sender);
+        dest.writeLong(senderId);
     }
 
     public static final Creator<Message> CREATOR = new Creator<Message>() {
 
         @Override
         public Message createFromParcel(Parcel source) {
-            // TODO
-            return null;
+            return new Message(source);
         }
 
         @Override
         public Message[] newArray(int size) {
-            // TODO
-            return null;
+            return new Message[size];
         }
 
     };

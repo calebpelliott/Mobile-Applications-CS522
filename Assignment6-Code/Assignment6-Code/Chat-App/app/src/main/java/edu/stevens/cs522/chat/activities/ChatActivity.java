@@ -18,6 +18,7 @@ import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.content.ServiceConnection;
+import android.database.Cursor;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.IBinder;
@@ -102,6 +103,8 @@ public class ChatActivity extends Activity implements OnClickListener, IQueryLis
         setContentView(R.layout.messages);
 
         //TODO initialize UI
+        messageList = (ListView) findViewById(R.id.message_list);
+
         destinationHost = (EditText) findViewById(R.id.destination_host);
 
         destinationPort = (EditText) findViewById(R.id.destination_port);
@@ -112,10 +115,13 @@ public class ChatActivity extends Activity implements OnClickListener, IQueryLis
         sendButton.setOnClickListener(this);
 
         // TODO use SimpleCursorAdapter to display the messages received.
-
+        fillData(null);
 
         // TODO create the message and peer managers, and initiate a query for all messages
+        messageManager = new MessageManager(this);
+        peerManager = new PeerManager(this);
 
+        messageManager.getAllMessagesAsync(this);
 
         // TODO initiate binding to the service
         Intent bindIntent = new Intent(this, ChatService.class);
@@ -232,6 +238,22 @@ public class ChatActivity extends Activity implements OnClickListener, IQueryLis
 
         Toast toast = Toast.makeText(context, toastText, duration);
         toast.show();
+    }
+
+    private void fillData(Cursor c){
+        String[] to = new String[]{MessageContract.SENDER,
+                MessageContract.MESSAGE_TEXT};
+        int[] from = new int[]{android.R.id.text1, android.R.id.text2};
+        messagesAdapter = new SimpleCursorAdapter(
+                this,
+                android.R.layout.simple_list_item_2,
+                c,
+                to,
+                from,
+                0);
+
+        ListView lv = (ListView) findViewById(R.id.message_list);
+        lv.setAdapter(messagesAdapter);
     }
 
     @Override

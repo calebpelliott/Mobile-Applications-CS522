@@ -32,6 +32,10 @@
             android:name=".services.ChatService"
             android:enabled="true"
             android:exported="false"></service>
+
+        <provider
+            android:authorities="edu.stevens.cs522.chat"
+            android:name=".providers.ChatProvider"/>
     </application>
 
 </manifest>

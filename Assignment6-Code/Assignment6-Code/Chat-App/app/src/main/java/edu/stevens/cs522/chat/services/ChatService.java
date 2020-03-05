@@ -24,6 +24,7 @@ import edu.stevens.cs522.chat.entities.Message;
 import edu.stevens.cs522.chat.entities.Peer;
 import edu.stevens.cs522.chat.managers.MessageManager;
 import edu.stevens.cs522.chat.managers.PeerManager;
+import edu.stevens.cs522.chat.settings.Settings;
 
 import static android.app.Activity.RESULT_OK;
 import static android.os.Process.THREAD_PRIORITY_BACKGROUND;
@@ -142,18 +143,22 @@ public class ChatService extends Service implements IChatService {
 
                 ResultReceiver receiver;
 
-                String messageText = "temp";
+                String sender;
+
+                String messageText;
 
                 Bundle data = message.getData();
 
                 // TODO get data from message (including result receiver)
                 destAddr = (InetAddress)data.getSerializable(DEST_ADDRESS);
                 destPort = data.getInt(DEST_PORT);
-                sendData = data.getString(CHAT_MESSAGE).getBytes();
+                sender = data.getString(CHAT_NAME);
+                messageText = data.getString(CHAT_MESSAGE);
                 receiver = data.getParcelable(RECEIVER);
-
-
                 // End todo
+                Date date = new Date();
+                String messageString = sender + ":" + date.getTime() + ":" + messageText;
+                sendData = messageString.getBytes();
 
                 DatagramPacket sendPacket = new DatagramPacket(sendData,
                         sendData.length, destAddr, destPort);
@@ -204,17 +209,18 @@ public class ChatService extends Service implements IChatService {
                     sender.name = message.sender;
                     sender.timestamp = message.timestamp;
                     sender.address = receivePacket.getAddress();
-
                     // TODO upsert the peer and message into the content provider.
                     // For this assignment, must use synchronous manager operations
                     // (no callbacks) because now we are on a background thread
+                    message.senderId = peerManager.persist(sender);
+                    messageManager.persist(message);
 
 
 
                 } catch (Exception e) {
 
                     Log.e(TAG, "Problems receiving packet.", e);
-                    socketOK = false;
+                    //socketOK = false;
                 }
 
             }

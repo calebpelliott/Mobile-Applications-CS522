@@ -1,10 +1,14 @@
 package edu.stevens.cs522.chat.managers;
 
+import android.app.Activity;
+import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 
 import edu.stevens.cs522.chat.async.IEntityCreator;
 import edu.stevens.cs522.chat.async.IQueryListener;
+import edu.stevens.cs522.chat.async.QueryBuilder;
+import edu.stevens.cs522.chat.contracts.MessageContract;
 import edu.stevens.cs522.chat.entities.Message;
 
 
@@ -15,6 +19,8 @@ import edu.stevens.cs522.chat.entities.Message;
 public class MessageManager extends Manager<Message> {
 
     private static final int LOADER_ID = 1;
+
+    private static final String TAG = MessageManager.class.getCanonicalName();
 
     private static final IEntityCreator<Message> creator = new IEntityCreator<Message>() {
         @Override
@@ -29,16 +35,23 @@ public class MessageManager extends Manager<Message> {
     }
 
     public void getAllMessagesAsync(IQueryListener<Message> listener) {
-        // TODO use QueryBuilder to complete this
+        QueryBuilder.executeQuery(TAG, (Activity) context, MessageContract.CONTENT_URI, LOADER_ID, creator, listener);
     }
 
-    public void persistAsync(Message Message) {
-        // TODO
+    public void persistAsync(Message message) {
+        ContentValues cv = new ContentValues();
+        message.writeToProvider(cv);
+        getAsyncResolver().insertAsync(MessageContract.CONTENT_URI,
+                cv,
+                null);
     }
 
     public long persist(Message message) {
         // Synchronous version, executed on background thread
-        throw new UnsupportedOperationException("persist not implemented");
+        ContentValues cv = new ContentValues();
+        message.writeToProvider(cv);
+        return MessageContract.getId(
+                getSyncResolver().insert(MessageContract.CONTENT_URI, cv));
     }
 
 
