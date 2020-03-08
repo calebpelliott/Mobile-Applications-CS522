@@ -17,8 +17,6 @@ import edu.stevens.cs522.chat.managers.TypedCursor;
 
 public class QueryBuilder<T> implements LoaderManager.LoaderCallbacks<Cursor> {
 
-    // TODO complete the implementation of this
-
     private String tag;
 
     private Context context;
@@ -49,7 +47,6 @@ public class QueryBuilder<T> implements LoaderManager.LoaderCallbacks<Cursor> {
                          int loaderID,
                          IEntityCreator<T> creator,
                          IQueryListener<T> listener) {
-        // TODO
         this.tag = tag;
         this.context = context;
         this.uri = uri;

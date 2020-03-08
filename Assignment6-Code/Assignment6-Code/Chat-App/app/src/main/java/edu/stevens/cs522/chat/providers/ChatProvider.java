@@ -15,6 +15,7 @@ import android.util.Log;
 import edu.stevens.cs522.chat.contracts.BaseContract;
 import edu.stevens.cs522.chat.contracts.MessageContract;
 import edu.stevens.cs522.chat.contracts.PeerContract;
+import edu.stevens.cs522.chat.entities.Peer;
 
 public class ChatProvider extends ContentProvider {
 
@@ -34,7 +35,7 @@ public class ChatProvider extends ContentProvider {
 
     private static final String DATABASE_NAME = "chat.db";
 
-    private static final int DATABASE_VERSION = 1;
+    private static final int DATABASE_VERSION = 4;
 
     private static final String MESSAGES_TABLE = "messages";
 
@@ -137,7 +138,24 @@ public class ChatProvider extends ContentProvider {
                     return instanceUri;
                 }
             case PEERS_ALL_ROWS:
-                row = db.insert(PEERS_TABLE, null, values);
+                String name = values.getAsString(PeerContract.NAME);
+                Cursor c = db.query(PEERS_TABLE,
+                        PeerContract.PROJECTION,
+                        PeerContract.NAME + "=?",
+                        new String[] {name},
+                        null, null, null);
+
+                if(c.moveToFirst()){
+                    Peer p = new Peer(c);
+                    row = p.id;
+
+                    db.update(PEERS_TABLE, values,
+                            PeerContract.NAME + "=?",
+                            new String[]{name});
+                }
+                else {
+                    row = db.insert(PEERS_TABLE, null, values);
+                }
                 if(row > 0){
                     Uri instanceUri = PeerContract.CONTENT_URI(row);
 

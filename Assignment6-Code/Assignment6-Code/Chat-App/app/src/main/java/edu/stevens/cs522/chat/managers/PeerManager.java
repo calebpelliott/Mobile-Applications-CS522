@@ -39,64 +39,42 @@ public class PeerManager extends Manager<Peer> {
         QueryBuilder.executeQuery(TAG, (Activity) context, PeerContract.CONTENT_URI, LOADER_ID, creator, listener);
     }
 
-    public void getPeerAsync(long id, IContinue<Peer> callback) {
-        // TODO need to check that peer is not null (not in database)
+    public void getPeerAsync(long id, final IContinue<Peer> callback) {
+        getAsyncResolver().queryAsync(PeerContract.CONTENT_URI,
+                PeerContract.PROJECTION,
+                PeerContract.ID + "=?",
+                new String[]{Long.toString(id)},
+                null,
+                new IContinue<Cursor>() {
+                    @Override
+                    public void kontinue(Cursor value) {
+                        Peer p = null;
+                        if (value.moveToFirst()){
+                            p = new Peer(value);
+                        }
+
+                        callback.kontinue(p);
+                    }
+                });
     }
 
     public void persistAsync(final Peer peer, final IContinue<Uri> callback) {
         ContentValues cv = new ContentValues();
         peer.writeToProvider(cv);
 
-        getAsyncResolver().queryAsync(PeerContract.CONTENT_URI,
-                PeerContract.PROJECTION,
-                PeerContract.NAME + "=?",
-                new String[]{peer.name},
-                null,
-                new IContinue<Cursor>() {
-                    @Override
-                    public void kontinue(Cursor value) {
-                        ContentValues cv = new ContentValues();
-                        peer.writeToProvider(cv);
+        getAsyncResolver().insertAsync(PeerContract.CONTENT_URI,
+                cv,
+                callback);
 
-                        if (value.moveToFirst()){
-                            getAsyncResolver().updateAsync(PeerContract.CONTENT_URI,
-                                    cv,
-                                    PeerContract.NAME + "=?",
-                                    new String[]{peer.name});
-                            callback.kontinue(PeerContract.CONTENT_URI(PeerContract.getId(value)));
-                        }
-                        else{
-                            getAsyncResolver().insertAsync(PeerContract.CONTENT_URI,
-                                    cv,
-                                    callback);
-                        }
-                    }
-                });
     }
 
     public long persist(Peer peer) {
-        // TODO synchronous version that executes on background thread (in service)
         ContentValues cv = new ContentValues();
         peer.writeToProvider(cv);
         long id = -1;
 
-        Cursor cursor = getSyncResolver().query(PeerContract.CONTENT_URI,
-                PeerContract.PROJECTION,
-                PeerContract.NAME + "=?",
-                new String[]{peer.name},
-                null);
-
-        if(cursor.moveToFirst()){
-            Peer p = new Peer(cursor);
-            id = p.id;
-            getSyncResolver().update(PeerContract.CONTENT_URI,
-                    cv,
-                    PeerContract.NAME + "=?",
-                    new String[]{peer.name});
-        }
-        else {
-            id = PeerContract.getId(getSyncResolver().insert(PeerContract.CONTENT_URI, cv));
-        }
+        Uri uri = getSyncResolver().insert(PeerContract.CONTENT_URI, cv);
+        id = PeerContract.getId(uri);
         return id;
     }
 

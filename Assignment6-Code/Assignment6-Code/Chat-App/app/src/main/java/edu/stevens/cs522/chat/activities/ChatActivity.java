@@ -102,7 +102,6 @@ public class ChatActivity extends Activity implements OnClickListener, IQueryLis
 
         setContentView(R.layout.messages);
 
-        //TODO initialize UI
         messageList = (ListView) findViewById(R.id.message_list);
 
         destinationHost = (EditText) findViewById(R.id.destination_host);
@@ -114,32 +113,26 @@ public class ChatActivity extends Activity implements OnClickListener, IQueryLis
         sendButton =      (Button) findViewById(R.id.send_button);
         sendButton.setOnClickListener(this);
 
-        // TODO use SimpleCursorAdapter to display the messages received.
         fillData(null);
 
-        // TODO create the message and peer managers, and initiate a query for all messages
         messageManager = new MessageManager(this);
         peerManager = new PeerManager(this);
 
         messageManager.getAllMessagesAsync(this);
 
-        // TODO initiate binding to the service
         Intent bindIntent = new Intent(this, ChatService.class);
         bindService(bindIntent, this, Context.BIND_AUTO_CREATE);
 
-        // TODO initialize sendResultReceiver (for receiving notification of message sent)
         sendResultReceiver = new ResultReceiverWrapper(new Handler());
     }
 
 	public void onResume() {
         super.onResume();
-        // TODO register result receiver
         sendResultReceiver.setReceiver(this);
     }
 
     public void onPause() {
         super.onPause();
-        // TODO unregister result receiver
         sendResultReceiver.setReceiver(null);
     }
 
@@ -161,13 +154,11 @@ public class ChatActivity extends Activity implements OnClickListener, IQueryLis
         super.onOptionsItemSelected(item);
         switch(item.getItemId()) {
 
-            // TODO PEERS provide the UI for viewing list of peers
             case R.id.peers:
                 Intent peerIntent = new Intent(this, ViewPeersActivity.class);
                 startActivity(peerIntent);
                 break;
 
-            // TODO SETTINGS provide the UI for settings
             case R.id.settings:
                 Intent intent = new Intent(this, SettingsActivity.class);
                 startActivity(intent);
@@ -207,7 +198,6 @@ public class ChatActivity extends Activity implements OnClickListener, IQueryLis
             // Get username from default shared preferences (see PreferenceManager, SettingsActivity)
             username = Settings.getChatName(this);
 
-            // TODO use chatService to send the message
             chatService.send(destAddr, destPort, username, message, sendResultReceiver);
 
             Log.i(TAG, "Sent message: " + message);
@@ -227,11 +217,9 @@ public class ChatActivity extends Activity implements OnClickListener, IQueryLis
 
         switch (resultCode) {
             case RESULT_OK:
-                // TODO show a success toast message
                 toastText = "Message: SUCCESS";
                 break;
             default:
-                // TODO show a failure toast message
                 toastText = "Message: FAILED";
                 break;
         }
@@ -268,7 +256,6 @@ public class ChatActivity extends Activity implements OnClickListener, IQueryLis
 
     @Override
     public void onServiceConnected(ComponentName name, IBinder service) {
-        // TODO initialize chatService
         chatService = ((ChatService.ChatBinder)service).getService();
     }
 

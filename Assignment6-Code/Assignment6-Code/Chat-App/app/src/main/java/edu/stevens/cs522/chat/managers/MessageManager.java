@@ -10,6 +10,7 @@ import edu.stevens.cs522.chat.async.IQueryListener;
 import edu.stevens.cs522.chat.async.QueryBuilder;
 import edu.stevens.cs522.chat.contracts.MessageContract;
 import edu.stevens.cs522.chat.entities.Message;
+import edu.stevens.cs522.chat.entities.Peer;
 
 
 /**
@@ -36,6 +37,19 @@ public class MessageManager extends Manager<Message> {
 
     public void getAllMessagesAsync(IQueryListener<Message> listener) {
         QueryBuilder.executeQuery(TAG, (Activity) context, MessageContract.CONTENT_URI, LOADER_ID, creator, listener);
+    }
+
+    public void getMessagesByPeerAsync(Peer peer, IQueryListener<Message> listener) {
+        QueryBuilder.reexecuteQuery(TAG,
+                (Activity) context,
+                MessageContract.CONTENT_URI,
+                MessageContract.PROJECTION,
+                MessageContract.SENDERID + "=?",
+                new String[]{Long.toString(peer.id)},
+                null,
+                LOADER_ID,
+                creator,
+                listener);
     }
 
     public void persistAsync(Message message) {

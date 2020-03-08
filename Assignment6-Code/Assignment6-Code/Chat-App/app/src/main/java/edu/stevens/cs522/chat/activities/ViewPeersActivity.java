@@ -6,11 +6,13 @@ import android.os.Bundle;
 import android.app.Activity;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.ListView;
 import android.widget.SimpleCursorAdapter;
 
 import edu.stevens.cs522.chat.R;
 import edu.stevens.cs522.chat.async.IQueryListener;
 import edu.stevens.cs522.chat.async.QueryBuilder;
+import edu.stevens.cs522.chat.contracts.PeerContract;
 import edu.stevens.cs522.chat.entities.Peer;
 import edu.stevens.cs522.chat.managers.PeerManager;
 import edu.stevens.cs522.chat.managers.TypedCursor;
@@ -18,23 +20,24 @@ import edu.stevens.cs522.chat.managers.TypedCursor;
 
 public class ViewPeersActivity extends Activity implements AdapterView.OnItemClickListener, IQueryListener<Peer> {
 
-    /*
-     * TODO See ChatActivity for example of what to do, query peers database instead of messages database.
-     */
-
     private PeerManager peerManager;
 
     private SimpleCursorAdapter peerAdapter;
+
+    private ListView peerList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.view_peers);
 
-        // TODO initialize peerAdapter with empty cursor (null)
+        fillData(null);
 
         peerManager = new PeerManager(this);
         peerManager.getAllPeersAsync(this);
+
+        peerList = (ListView) findViewById(R.id.peerList);
+        peerList.setOnItemClickListener(this);
 
     }
 
@@ -57,11 +60,27 @@ public class ViewPeersActivity extends Activity implements AdapterView.OnItemCli
 
     @Override
     public void handleResults(TypedCursor<Peer> results) {
-        // TODO
+        peerAdapter.swapCursor(results.getCursor());
+        peerAdapter.notifyDataSetChanged();
     }
 
     @Override
     public void closeResults() {
-        // TODO
+        peerAdapter.swapCursor(null);
+    }
+
+    private void fillData(Cursor c){
+        String[] to = new String[]{PeerContract.NAME};
+        int[] from = new int[]{android.R.id.text1};
+        peerAdapter = new SimpleCursorAdapter(
+                this,
+                android.R.layout.simple_list_item_2,
+                c,
+                to,
+                from,
+                0);
+
+        ListView lv = (ListView) findViewById(R.id.peerList);
+        lv.setAdapter(peerAdapter);
     }
 }

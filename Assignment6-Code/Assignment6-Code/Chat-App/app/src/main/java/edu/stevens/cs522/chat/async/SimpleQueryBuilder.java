@@ -23,7 +23,6 @@ public class SimpleQueryBuilder<T> implements IContinue<Cursor>{
     private SimpleQueryBuilder(String tag,
                                IEntityCreator<T> creator,
                                ISimpleQueryListener<T> listener) {
-        // TODO
         this.creator = creator;
         this.listener = listener;
     }

@@ -2,6 +2,7 @@ package edu.stevens.cs522.chat.services;
 
 import android.app.Service;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Binder;
 import android.os.Bundle;
 import android.os.Handler;
@@ -9,6 +10,7 @@ import android.os.HandlerThread;
 import android.os.IBinder;
 import android.os.Looper;
 import android.os.ResultReceiver;
+import android.preference.PreferenceManager;
 import android.util.Log;
 
 import java.io.IOException;
@@ -70,12 +72,10 @@ public class ChatService extends Service implements IChatService {
             throw new IllegalStateException("Unable to init client socket.", e);
         }
 
-        // TODO initialize the thread that sends messages
         HandlerThread sendThread = new HandlerThread(SEND_TAG, THREAD_PRIORITY_BACKGROUND);
         sendThread.start();
         Looper sendLooper = sendThread.getLooper();
         sendHandler = new SendHandler(sendLooper);
-        // end TODO
 
         receiveThread = new Thread(new ReceiverThread());
         receiveThread.start();
@@ -106,7 +106,8 @@ public class ChatService extends Service implements IChatService {
     @Override
     public void send(InetAddress destAddress, int destPort, String sender, String messageText, ResultReceiver receiver) {
         android.os.Message message = sendHandler.obtainMessage();
-        // TODO send the message to the sending thread (add a bundle with params)
+
+        //send the message to the sending thread (add a bundle with params)
         Bundle bundle = new Bundle();
         bundle.putSerializable(SendHandler.DEST_ADDRESS, destAddress);
         bundle.putInt(SendHandler.DEST_PORT, destPort);
@@ -149,13 +150,13 @@ public class ChatService extends Service implements IChatService {
 
                 Bundle data = message.getData();
 
-                // TODO get data from message (including result receiver)
+                // get data from message (including result receiver)
                 destAddr = (InetAddress)data.getSerializable(DEST_ADDRESS);
                 destPort = data.getInt(DEST_PORT);
                 sender = data.getString(CHAT_NAME);
                 messageText = data.getString(CHAT_MESSAGE);
                 receiver = data.getParcelable(RECEIVER);
-                // End todo
+
                 Date date = new Date();
                 String messageString = sender + ":" + date.getTime() + ":" + messageText;
                 sendData = messageString.getBytes();
@@ -209,9 +210,8 @@ public class ChatService extends Service implements IChatService {
                     sender.name = message.sender;
                     sender.timestamp = message.timestamp;
                     sender.address = receivePacket.getAddress();
-                    // TODO upsert the peer and message into the content provider.
-                    // For this assignment, must use synchronous manager operations
-                    // (no callbacks) because now we are on a background thread
+
+                    //upsert the peer and message into the content provider.
                     message.senderId = peerManager.persist(sender);
                     messageManager.persist(message);
 
@@ -220,7 +220,7 @@ public class ChatService extends Service implements IChatService {
                 } catch (Exception e) {
 
                     Log.e(TAG, "Problems receiving packet.", e);
-                    //socketOK = false;
+                    socketOK = false;
                 }
 
             }

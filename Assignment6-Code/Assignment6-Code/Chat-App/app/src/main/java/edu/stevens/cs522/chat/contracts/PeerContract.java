@@ -29,7 +29,6 @@ public class PeerContract extends BaseContract {
     public static final String CONTENT_PATH_ITEM = CONTENT_PATH(CONTENT_URI("#"));
 
 
-    // TODO define column names, getters for cursors, setters for contentvalues
     public static final String ID = _ID;
 
     public final static String NAME = "NAME";

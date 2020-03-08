@@ -1,5 +1,6 @@
 package edu.stevens.cs522.chat.managers;
 
+import android.app.Activity;
 import android.content.ContentResolver;
 import android.content.Context;
 import android.net.Uri;
@@ -8,6 +9,8 @@ import edu.stevens.cs522.chat.async.AsyncContentResolver;
 import edu.stevens.cs522.chat.async.IEntityCreator;
 import edu.stevens.cs522.chat.async.IQueryListener;
 import edu.stevens.cs522.chat.async.ISimpleQueryListener;
+import edu.stevens.cs522.chat.async.QueryBuilder;
+import edu.stevens.cs522.chat.async.SimpleQueryBuilder;
 
 
 /**
@@ -49,13 +52,9 @@ public abstract class Manager<T> {
         return asyncResolver;
     }
 
-    // TODO Provide operations for executing queries (see lectures)
-
-    // TODO Provide operations for executing queries (see lectures)
-
     protected void executeSimpleQuery(Uri uri,
                                       ISimpleQueryListener<T> listener) {
-        // TODO
+        SimpleQueryBuilder.executeQuery(tag,(Activity) context, uri, creator, listener);
     }
 
     protected void executeSimpleQuery(Uri uri,
@@ -63,12 +62,15 @@ public abstract class Manager<T> {
                                       String selection,
                                       String[] selectionArgs,
                                       ISimpleQueryListener<T> listener) {
-        // TODO
+        SimpleQueryBuilder.executeQuery(tag, (Activity) context,
+                uri, projection, selection, selectionArgs,
+                creator, listener);
     }
 
     protected void executeQuery(Uri uri,
                                 IQueryListener<T> listener) {
-        // TODO
+        QueryBuilder.executeQuery(tag, (Activity) context, uri, loaderID,
+                creator, listener);
     }
 
     protected void executeQuery(Uri uri,
@@ -77,12 +79,14 @@ public abstract class Manager<T> {
                                 String[] selectionArgs,
                                 String order,
                                 IQueryListener<T> listener) {
-        // TODO
+        QueryBuilder.executeQuery(tag, (Activity) context, uri, projection,
+                selection, selectionArgs, order, loaderID, creator, listener);
     }
 
     protected void reexecuteQuery(Uri uri,
                                   IQueryListener<T> listener) {
-        // TODO
+        QueryBuilder.reexecuteQuery(tag, (Activity) context, uri, loaderID,
+                creator, listener);
     }
 
     protected void reexecuteQuery(Uri uri,
@@ -91,7 +95,8 @@ public abstract class Manager<T> {
                                   String[] selectionArgs,
                                   String order,
                                   IQueryListener<T> listener) {
-        // TODO
+        QueryBuilder.reexecuteQuery(tag, (Activity) context, uri, projection,
+                selection, selectionArgs, order, loaderID, creator, listener);
     }
 
 }
