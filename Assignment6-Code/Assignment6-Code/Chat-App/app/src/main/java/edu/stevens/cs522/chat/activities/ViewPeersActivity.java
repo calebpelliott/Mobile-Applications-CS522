@@ -61,7 +61,6 @@ public class ViewPeersActivity extends Activity implements AdapterView.OnItemCli
     @Override
     public void handleResults(TypedCursor<Peer> results) {
         peerAdapter.swapCursor(results.getCursor());
-        peerAdapter.notifyDataSetChanged();
     }
 
     @Override
