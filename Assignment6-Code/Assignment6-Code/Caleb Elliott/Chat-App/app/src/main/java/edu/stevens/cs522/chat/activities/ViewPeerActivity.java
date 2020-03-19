@@ -65,7 +65,6 @@ public class ViewPeerActivity extends Activity implements IQueryListener<Message
     @Override
     public void handleResults(TypedCursor<Message> results) {
         messageAdapter.swapCursor(results.getCursor());
-        messageAdapter.notifyDataSetChanged();
     }
 
     @Override

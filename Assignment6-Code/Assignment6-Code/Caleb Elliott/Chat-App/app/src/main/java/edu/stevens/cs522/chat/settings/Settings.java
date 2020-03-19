@@ -3,6 +3,7 @@ package edu.stevens.cs522.chat.settings;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.preference.EditTextPreference;
+import android.preference.PreferenceManager;
 
 import java.util.UUID;
 
@@ -18,10 +19,7 @@ public class Settings {
 
     public static void init(Context context) {
         getClientId(context);
-        con = context;
     }
-
-    private static Context con = null;
 
     public static UUID getClientId(Context context) {
         SharedPreferences prefs = context.getSharedPreferences(SETTINGS, Context.MODE_PRIVATE);
@@ -41,9 +39,11 @@ public class Settings {
     }
 
     public static String getChatName(Context context) {
-        SharedPreferences prefs = context.getSharedPreferences(SETTINGS, Context.MODE_PRIVATE);
+        //SharedPreferences prefs = context.getSharedPreferences(SETTINGS, Context.MODE_PRIVATE);
+        SharedPreferences pr = PreferenceManager.getDefaultSharedPreferences(context);
+        return pr.getString(CHAT_NAME_KEY, "_default");
         // SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
-        return prefs.getString(CHAT_NAME_KEY, null);
+        //return prefs.getString(CHAT_NAME_KEY, null);
     }
 
     public static void saveChatName(Context context, String chatName) {
@@ -51,15 +51,6 @@ public class Settings {
         // SharedPreferences.Editor editor = PreferenceManager.getDefaultSharedPreferences(context).edit();
         editor.putString(CHAT_NAME_KEY, chatName);
         editor.commit();
-    }
-
-    public static void saveChatName(String chatName) {
-        if(con != null) {
-            SharedPreferences.Editor editor = con.getSharedPreferences(SETTINGS, Context.MODE_PRIVATE).edit();
-            // SharedPreferences.Editor editor = PreferenceManager.getDefaultSharedPreferences(context).edit();
-            editor.putString(CHAT_NAME_KEY, chatName);
-            editor.commit();
-        }
     }
 
     public static boolean isRegistered(Context context) {

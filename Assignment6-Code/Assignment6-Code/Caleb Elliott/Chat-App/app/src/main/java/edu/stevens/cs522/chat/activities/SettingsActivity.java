@@ -17,21 +17,13 @@ public class SettingsActivity extends Activity {
 
     public static final String USERNAME_KEY = Settings.CHAT_NAME_KEY;
 
-    public static class SettingsFragment extends PreferenceFragment implements SharedPreferences.OnSharedPreferenceChangeListener {
+    public static class SettingsFragment extends PreferenceFragment {
         @Override
         public void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
 
             // Load the preferences from an XML resource
             addPreferencesFromResource(R.xml.settings);
-
-            getPreferenceScreen().getSharedPreferences().registerOnSharedPreferenceChangeListener(this);
-        }
-
-        public void onSharedPreferenceChanged(SharedPreferences sharedPreferences, String key){
-            EditTextPreference edit = (EditTextPreference) findPreference(key);
-            String s = edit.getText();
-            Settings.saveChatName(s);
         }
 
     }
