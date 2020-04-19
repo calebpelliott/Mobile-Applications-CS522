@@ -2,572 +2,41 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="68ac591f-1af9-4722-bcfc-08c5f40f9827" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/Chat-App/.idea/dbnavigator.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Caleb Elliott.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/.idea/caches/build_file_checksums.ser" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/.idea/caches/gradle_models.ser" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/.idea/codeStyles/Project.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/.idea/dbnavigator.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/.idea/runConfigurations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/app-debug/app-debug.aar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/app-debug/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/app/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/app/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/app/.idea/caches/gradle_models.ser" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/app/.idea/codeStyles/Project.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/app/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/app/.idea/libraries/Gradle__artifacts_cs522_library_unspecified_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/app/.idea/libraries/Gradle__com_android_support_constraint_constraint_layout_1_1_3_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/app/.idea/libraries/Gradle__com_android_support_constraint_constraint_layout_solver_1_1_3_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/app/.idea/libraries/Gradle__com_android_support_support_annotations_27_1_1_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/app/.idea/libraries/Gradle__com_android_support_test_espresso_espresso_core_3_0_2_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/app/.idea/libraries/Gradle__com_android_support_test_espresso_espresso_idling_resource_3_0_2_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/app/.idea/libraries/Gradle__com_android_support_test_monitor_1_0_2_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/app/.idea/libraries/Gradle__com_android_support_test_runner_1_0_2_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/app/.idea/libraries/Gradle__com_google_code_findbugs_jsr305_3_0_2_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/app/.idea/libraries/Gradle__com_google_errorprone_error_prone_annotations_2_3_2_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/app/.idea/libraries/Gradle__com_google_guava_failureaccess_1_0_1_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/app/.idea/libraries/Gradle__com_google_guava_guava_28_1_android_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/app/.idea/libraries/Gradle__com_google_guava_listenablefuture_9999_0_empty_to_avoid_conflict_with_guava_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/app/.idea/libraries/Gradle__com_google_j2objc_j2objc_annotations_1_3_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/app/.idea/libraries/Gradle__com_squareup_javawriter_2_1_1_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/app/.idea/libraries/Gradle__javax_inject_javax_inject_1_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/app/.idea/libraries/Gradle__junit_junit_4_12_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/app/.idea/libraries/Gradle__net_sf_kxml_kxml2_2_3_0_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/app/.idea/libraries/Gradle__org_checkerframework_checker_compat_qual_2_5_5_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/app/.idea/libraries/Gradle__org_codehaus_mojo_animal_sniffer_annotations_1_18_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/app/.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/app/.idea/libraries/Gradle__org_hamcrest_hamcrest_integration_1_3_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/app/.idea/libraries/Gradle__org_hamcrest_hamcrest_library_1_3_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/app/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/app/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/app/.idea/runConfigurations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/app/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/app/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/app/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/app/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/app/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/app/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/app/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/app/local.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/app/proguard-rules.pro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/app/src/androidTest/java/edu/stevens/cs522/chatclient/ExampleInstrumentedTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/app/src/main/AndroidManifest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/app/src/main/java/edu/stevens/cs522/chatclient/ChatClient.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/app/src/main/res/layout/chat_client.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/app/src/main/res/values-w820dp/dimens.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/app/src/main/res/values/colors.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/app/src/main/res/values/dimens.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/app/src/main/res/values/strings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/app/src/main/res/values/styles.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/app/src/test/java/edu/stevens/cs522/chatclient/ExampleUnitTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/01fd95e475a3f06143f57c001214ac22.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/04af8115009a7983bf4d526ebdfc4d9d.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/08eb18318a08c4adf71b0b52ab973152.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/09a531c9686f3aea912f1efba5cfe3fd.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/0bf7b3edf132b6eaf46b08d3dc3d725f.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/0fcc9f823967e45c6d3bb7139a285e62.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/10fd80b860d64c442687de2e29e5e89d.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/10fd80b860d64c442687de2e29e5e89d/package-aware-r.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/11f775ca036d37d0c4bf780909f09493.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/16cc6366aa6dd3009af2ac23fe1f755a.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/181f0a3a82d08e9d42a2612c8d443b3c.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/191a40492ab64278cc09c883c9c252dc.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/1b52d011a02899be5bf1ec7043f88fb1.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/1ba8e747788cd16fb42dd1b8813ce92c.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/1ba8e747788cd16fb42dd1b8813ce92c/cs522-library-runtime.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/1c1322f3ce7e6433fe241f074ff682e0.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/1c6fdd3c0a1b3e1292fea8967357b7af.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/1c6fdd3c0a1b3e1292fea8967357b7af/cs522-library-runtime/classes.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/1d9a0bbf5b1f8340fd6030cc4f1a8007.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/1ea460165e88eb90acde09b2f2b1dd48.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/1ea460165e88eb90acde09b2f2b1dd48/cs522-library-runtime/classes.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/1f69822211758db0a56f111ef5578c4b.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/213591d80db47c68c015b9497db46348.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/220931501ccdf7ce2dd59391d717a83c.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/220931501ccdf7ce2dd59391d717a83c/cs522-library/AndroidManifest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/220931501ccdf7ce2dd59391d717a83c/cs522-library/R.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/220931501ccdf7ce2dd59391d717a83c/cs522-library/res/drawable-v24/ic_launcher_foreground.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/220931501ccdf7ce2dd59391d717a83c/cs522-library/res/drawable/ic_launcher_background.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/220931501ccdf7ce2dd59391d717a83c/cs522-library/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/220931501ccdf7ce2dd59391d717a83c/cs522-library/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/220931501ccdf7ce2dd59391d717a83c/cs522-library/res/mipmap-hdpi-v4/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/220931501ccdf7ce2dd59391d717a83c/cs522-library/res/mipmap-hdpi-v4/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/220931501ccdf7ce2dd59391d717a83c/cs522-library/res/mipmap-mdpi-v4/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/220931501ccdf7ce2dd59391d717a83c/cs522-library/res/mipmap-mdpi-v4/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/220931501ccdf7ce2dd59391d717a83c/cs522-library/res/mipmap-xhdpi-v4/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/220931501ccdf7ce2dd59391d717a83c/cs522-library/res/mipmap-xhdpi-v4/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/220931501ccdf7ce2dd59391d717a83c/cs522-library/res/mipmap-xxhdpi-v4/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/220931501ccdf7ce2dd59391d717a83c/cs522-library/res/mipmap-xxhdpi-v4/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/220931501ccdf7ce2dd59391d717a83c/cs522-library/res/mipmap-xxxhdpi-v4/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/220931501ccdf7ce2dd59391d717a83c/cs522-library/res/mipmap-xxxhdpi-v4/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/220931501ccdf7ce2dd59391d717a83c/cs522-library/res/values/values.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/254a70089fe9eb7609d731aa30053794.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/281f27d9a0b40d5199265538a6824a6b.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/281f27d9a0b40d5199265538a6824a6b/package-aware-r.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/28e38261d90a3089d802412f3988c493.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/28e38261d90a3089d802412f3988c493/cs522-library-runtime.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/2b41d311c7af75ab0e603d46f55e29b6.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/2b63511bd2de15dfcd9be90e0b325191.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/2c4b42ca94f42d62e51b5d613fa3043e.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/2cc0f3c7f1495517539e13eb9df9f9f4.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/2d6997d8f2af2ecd29a4c2e87bbf146c.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/2ede8535b5702f2468882cf14e5aea42.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/2f23d4d1d5d5cf3d8c828184f04e44ba.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/32c75a9deeb335ed0ead3b82c894b8c4.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/37098a0f234e102b0d3e37ca7517eef7.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/37b326bc7dfbd59b9b8865e708200afd.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/37b326bc7dfbd59b9b8865e708200afd/cs522-library-runtime.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/3a29ab0964e0e3822c12784740b20be0.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/3b08e624cd534b85b5154767b03b4f44.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/3b7014b691e8c58e23d5bf9f0cf14358.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/3d0bf11806c5f0fef14b077aa5a20eb3.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/4015d3d597c2bbcd0a164f23ad13cf4a.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/431e9b0e58a7b5ae72f47f51b7e81c2b.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/431e9b0e58a7b5ae72f47f51b7e81c2b/package-aware-r.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/4389a9921bc4acb4737ccddc6fb01a76.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/49981be63913072206abcf2e04546885.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/4b9d530b0bed1495e26ca0352fe58e8d.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/526e1764f0a92f831b425a532ead2f37.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/5669e665d6dc482ed67c8325edc0d72a.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/5b1aad29ffdbb6e1da6d358ecb88deb8.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/62c92f0f1079edd02e7d9eff54aa16ee.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/62c92f0f1079edd02e7d9eff54aa16ee/cs522-library-api.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/656cc8bf5318815f1f607115e60b26e1.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/6573520d702e7c643a5c8e32245903bc.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/65c6301d43d869ea9568b03b5e53621e.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/65c6301d43d869ea9568b03b5e53621e/package-aware-r.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/6728b87dcfa726b2c31f157d97725f79.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/6728b87dcfa726b2c31f157d97725f79/cs522-library-runtime.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/69ff1337267d5b85c7d12becb77f59ed.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/69ff1337267d5b85c7d12becb77f59ed/package-aware-r.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/6a41a22240416e0022e357d743f3050e.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/6a41a22240416e0022e357d743f3050e/cs522-library/AndroidManifest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/6a41a22240416e0022e357d743f3050e/cs522-library/R.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/6a41a22240416e0022e357d743f3050e/cs522-library/jars/classes.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/6a41a22240416e0022e357d743f3050e/cs522-library/res/drawable-v24/ic_launcher_foreground.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/6a41a22240416e0022e357d743f3050e/cs522-library/res/drawable/ic_launcher_background.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/6a41a22240416e0022e357d743f3050e/cs522-library/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/6a41a22240416e0022e357d743f3050e/cs522-library/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/6a41a22240416e0022e357d743f3050e/cs522-library/res/mipmap-hdpi-v4/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/6a41a22240416e0022e357d743f3050e/cs522-library/res/mipmap-hdpi-v4/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/6a41a22240416e0022e357d743f3050e/cs522-library/res/mipmap-mdpi-v4/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/6a41a22240416e0022e357d743f3050e/cs522-library/res/mipmap-mdpi-v4/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/6a41a22240416e0022e357d743f3050e/cs522-library/res/mipmap-xhdpi-v4/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/6a41a22240416e0022e357d743f3050e/cs522-library/res/mipmap-xhdpi-v4/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/6a41a22240416e0022e357d743f3050e/cs522-library/res/mipmap-xxhdpi-v4/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/6a41a22240416e0022e357d743f3050e/cs522-library/res/mipmap-xxhdpi-v4/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/6a41a22240416e0022e357d743f3050e/cs522-library/res/mipmap-xxxhdpi-v4/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/6a41a22240416e0022e357d743f3050e/cs522-library/res/mipmap-xxxhdpi-v4/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/6a41a22240416e0022e357d743f3050e/cs522-library/res/values/values.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/702dceffa385f938e35e118d505bf848.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/704402852eceb0b0b1e3572ddd067b9a.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/722c19169497266badbbd757a3819627.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/73bac9cca8cc72408ec51dd90bb46d6a.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/7a60d2d2f257a905f230bf4687685612.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/7db642ececdb9aae82da13dbe518520b.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/7db642ececdb9aae82da13dbe518520b/cs522-library-runtime/classes.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/7f3eaec6fd8a23e752c42643972d59bc.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/808824205b0eeb55e2d0368fb3f8d6ad.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/83866c9ef04f5b89e912adc9498d55f7.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/85c69b59eca268c74eab7bc9d8254acf.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/8601fc01d8bf7acda9a061ba14e14bab.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/86f91df49012580297a8f42879da14fc.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/88e6c622ddbe15e2ec592831e0ad8723.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/8b1f1ff59b099cf4a1fdd202775d987f.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/8b8f31162ab04423b0fab55e8d421676.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/8b8f31162ab04423b0fab55e8d421676/cs522-library-api.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/8c5b2f72ed4625aa98aec79a848b9098.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/8c5ff18787ada27eddddbde2e2ceab5c.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/8e5f12a9e26344e48bda899938bf3536.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/8e9dc5f6b56cbb0b97289f01f99e84a1.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/8f47ccb905fdabdbde9335c24a711d24.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/8ffa6c5d303f92499cca328bd5af3247.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/93629f0d089ae78f6eff31ecce1c8cf6.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/93dc805593ccdc794422399808de882f.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/96978ea67303c070fdfbff15edaab72c.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/96978ea67303c070fdfbff15edaab72c/cs522-library-runtime/classes.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/99bbc948361cc8cb92ffacc314093143.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/9a10e2e5fbf60f16afd7990a46417a0f.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/9a90f6bc145132ae3aaf41f2f0567777.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/9b5ae949a38d15a51dc944c9d50470c0.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/9ec6d9ff3c8167b2f8764c9d0298c44d.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/a14f533405f672ec07f884e676ece798.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/a261d39751401797505fa657b2bae05d.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/a261d39751401797505fa657b2bae05d/cs522-library-runtime.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/a2e04cdc7f892d3fa0d71f274279821c.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/a4107ecdcebc0860013046e5cb982fef.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/a431cf1a5a6dba353bb707b8b30466d3.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/a459de7c86a1d3d83540c62b4438dde3.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/a459de7c86a1d3d83540c62b4438dde3/cs522-library/AndroidManifest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/a459de7c86a1d3d83540c62b4438dde3/cs522-library/R.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/a459de7c86a1d3d83540c62b4438dde3/cs522-library/jars/classes.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/a459de7c86a1d3d83540c62b4438dde3/cs522-library/res/drawable-v24/ic_launcher_foreground.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/a459de7c86a1d3d83540c62b4438dde3/cs522-library/res/drawable/ic_launcher_background.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/a459de7c86a1d3d83540c62b4438dde3/cs522-library/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/a459de7c86a1d3d83540c62b4438dde3/cs522-library/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/a459de7c86a1d3d83540c62b4438dde3/cs522-library/res/mipmap-hdpi-v4/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/a459de7c86a1d3d83540c62b4438dde3/cs522-library/res/mipmap-hdpi-v4/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/a459de7c86a1d3d83540c62b4438dde3/cs522-library/res/mipmap-mdpi-v4/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/a459de7c86a1d3d83540c62b4438dde3/cs522-library/res/mipmap-mdpi-v4/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/a459de7c86a1d3d83540c62b4438dde3/cs522-library/res/mipmap-xhdpi-v4/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/a459de7c86a1d3d83540c62b4438dde3/cs522-library/res/mipmap-xhdpi-v4/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/a459de7c86a1d3d83540c62b4438dde3/cs522-library/res/mipmap-xxhdpi-v4/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/a459de7c86a1d3d83540c62b4438dde3/cs522-library/res/mipmap-xxhdpi-v4/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/a459de7c86a1d3d83540c62b4438dde3/cs522-library/res/mipmap-xxxhdpi-v4/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/a459de7c86a1d3d83540c62b4438dde3/cs522-library/res/mipmap-xxxhdpi-v4/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/a459de7c86a1d3d83540c62b4438dde3/cs522-library/res/values/values.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/a9b8fca80e11eb61538659293f07ca07.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/a9ecfc42acb72d3936a714cee6cad895.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/aaa9b1b39697a96f39977da11f04bd23.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/aaea8753f7b574f427bacc2051d25619.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/aaea8753f7b574f427bacc2051d25619/cs522-library-runtime/classes.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/ac66f81cfe34dc0c0550bfe55b17539e.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/b2e207be65bbbc7b59532dcf5da253ba.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/b2e207be65bbbc7b59532dcf5da253ba/cs522-library/AndroidManifest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/b2e207be65bbbc7b59532dcf5da253ba/cs522-library/R.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/b2e207be65bbbc7b59532dcf5da253ba/cs522-library/jars/classes.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/b2e207be65bbbc7b59532dcf5da253ba/cs522-library/res/drawable-v24/ic_launcher_foreground.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/b2e207be65bbbc7b59532dcf5da253ba/cs522-library/res/drawable/ic_launcher_background.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/b2e207be65bbbc7b59532dcf5da253ba/cs522-library/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/b2e207be65bbbc7b59532dcf5da253ba/cs522-library/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/b2e207be65bbbc7b59532dcf5da253ba/cs522-library/res/mipmap-hdpi-v4/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/b2e207be65bbbc7b59532dcf5da253ba/cs522-library/res/mipmap-hdpi-v4/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/b2e207be65bbbc7b59532dcf5da253ba/cs522-library/res/mipmap-mdpi-v4/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/b2e207be65bbbc7b59532dcf5da253ba/cs522-library/res/mipmap-mdpi-v4/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/b2e207be65bbbc7b59532dcf5da253ba/cs522-library/res/mipmap-xhdpi-v4/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/b2e207be65bbbc7b59532dcf5da253ba/cs522-library/res/mipmap-xhdpi-v4/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/b2e207be65bbbc7b59532dcf5da253ba/cs522-library/res/mipmap-xxhdpi-v4/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/b2e207be65bbbc7b59532dcf5da253ba/cs522-library/res/mipmap-xxhdpi-v4/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/b2e207be65bbbc7b59532dcf5da253ba/cs522-library/res/mipmap-xxxhdpi-v4/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/b2e207be65bbbc7b59532dcf5da253ba/cs522-library/res/mipmap-xxxhdpi-v4/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/b2e207be65bbbc7b59532dcf5da253ba/cs522-library/res/values/values.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/b5bac4a1cdee0bf6c122554780b549cc.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/b8713aecedf23b9414b7dcec9a0b29cb.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/b8713aecedf23b9414b7dcec9a0b29cb/cs522-library/AndroidManifest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/b8713aecedf23b9414b7dcec9a0b29cb/cs522-library/R.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/b8713aecedf23b9414b7dcec9a0b29cb/cs522-library/res/drawable-v24/ic_launcher_foreground.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/b8713aecedf23b9414b7dcec9a0b29cb/cs522-library/res/drawable/ic_launcher_background.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/b8713aecedf23b9414b7dcec9a0b29cb/cs522-library/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/b8713aecedf23b9414b7dcec9a0b29cb/cs522-library/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/b8713aecedf23b9414b7dcec9a0b29cb/cs522-library/res/mipmap-hdpi-v4/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/b8713aecedf23b9414b7dcec9a0b29cb/cs522-library/res/mipmap-hdpi-v4/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/b8713aecedf23b9414b7dcec9a0b29cb/cs522-library/res/mipmap-mdpi-v4/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/b8713aecedf23b9414b7dcec9a0b29cb/cs522-library/res/mipmap-mdpi-v4/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/b8713aecedf23b9414b7dcec9a0b29cb/cs522-library/res/mipmap-xhdpi-v4/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/b8713aecedf23b9414b7dcec9a0b29cb/cs522-library/res/mipmap-xhdpi-v4/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/b8713aecedf23b9414b7dcec9a0b29cb/cs522-library/res/mipmap-xxhdpi-v4/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/b8713aecedf23b9414b7dcec9a0b29cb/cs522-library/res/mipmap-xxhdpi-v4/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/b8713aecedf23b9414b7dcec9a0b29cb/cs522-library/res/mipmap-xxxhdpi-v4/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/b8713aecedf23b9414b7dcec9a0b29cb/cs522-library/res/mipmap-xxxhdpi-v4/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/b8713aecedf23b9414b7dcec9a0b29cb/cs522-library/res/values/values.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/be5b9980ddf1f0082acb8a9d3afa9970.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/be5b9980ddf1f0082acb8a9d3afa9970/cs522-library/AndroidManifest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/be5b9980ddf1f0082acb8a9d3afa9970/cs522-library/R.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/be5b9980ddf1f0082acb8a9d3afa9970/cs522-library/jars/classes.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/be5b9980ddf1f0082acb8a9d3afa9970/cs522-library/res/drawable-v24/ic_launcher_foreground.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/be5b9980ddf1f0082acb8a9d3afa9970/cs522-library/res/drawable/ic_launcher_background.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/be5b9980ddf1f0082acb8a9d3afa9970/cs522-library/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/be5b9980ddf1f0082acb8a9d3afa9970/cs522-library/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/be5b9980ddf1f0082acb8a9d3afa9970/cs522-library/res/mipmap-hdpi-v4/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/be5b9980ddf1f0082acb8a9d3afa9970/cs522-library/res/mipmap-hdpi-v4/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/be5b9980ddf1f0082acb8a9d3afa9970/cs522-library/res/mipmap-mdpi-v4/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/be5b9980ddf1f0082acb8a9d3afa9970/cs522-library/res/mipmap-mdpi-v4/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/be5b9980ddf1f0082acb8a9d3afa9970/cs522-library/res/mipmap-xhdpi-v4/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/be5b9980ddf1f0082acb8a9d3afa9970/cs522-library/res/mipmap-xhdpi-v4/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/be5b9980ddf1f0082acb8a9d3afa9970/cs522-library/res/mipmap-xxhdpi-v4/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/be5b9980ddf1f0082acb8a9d3afa9970/cs522-library/res/mipmap-xxhdpi-v4/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/be5b9980ddf1f0082acb8a9d3afa9970/cs522-library/res/mipmap-xxxhdpi-v4/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/be5b9980ddf1f0082acb8a9d3afa9970/cs522-library/res/mipmap-xxxhdpi-v4/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/be5b9980ddf1f0082acb8a9d3afa9970/cs522-library/res/values/values.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/bf3f2d8a5ad6bc9cb9be2dab670fa3b5.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/bf3f2d8a5ad6bc9cb9be2dab670fa3b5/cs522-library-api.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/bfc7435a4fde24f896a9430fe39621d2.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/bfc7435a4fde24f896a9430fe39621d2/package-aware-r.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/bfef92307adbdd4e8e0b99ca473d2115.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/bfef92307adbdd4e8e0b99ca473d2115/cs522-library/AndroidManifest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/bfef92307adbdd4e8e0b99ca473d2115/cs522-library/R.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/bfef92307adbdd4e8e0b99ca473d2115/cs522-library/res/drawable-v24/ic_launcher_foreground.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/bfef92307adbdd4e8e0b99ca473d2115/cs522-library/res/drawable/ic_launcher_background.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/bfef92307adbdd4e8e0b99ca473d2115/cs522-library/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/bfef92307adbdd4e8e0b99ca473d2115/cs522-library/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/bfef92307adbdd4e8e0b99ca473d2115/cs522-library/res/mipmap-hdpi-v4/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/bfef92307adbdd4e8e0b99ca473d2115/cs522-library/res/mipmap-hdpi-v4/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/bfef92307adbdd4e8e0b99ca473d2115/cs522-library/res/mipmap-mdpi-v4/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/bfef92307adbdd4e8e0b99ca473d2115/cs522-library/res/mipmap-mdpi-v4/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/bfef92307adbdd4e8e0b99ca473d2115/cs522-library/res/mipmap-xhdpi-v4/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/bfef92307adbdd4e8e0b99ca473d2115/cs522-library/res/mipmap-xhdpi-v4/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/bfef92307adbdd4e8e0b99ca473d2115/cs522-library/res/mipmap-xxhdpi-v4/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/bfef92307adbdd4e8e0b99ca473d2115/cs522-library/res/mipmap-xxhdpi-v4/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/bfef92307adbdd4e8e0b99ca473d2115/cs522-library/res/mipmap-xxxhdpi-v4/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/bfef92307adbdd4e8e0b99ca473d2115/cs522-library/res/mipmap-xxxhdpi-v4/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/bfef92307adbdd4e8e0b99ca473d2115/cs522-library/res/values/values.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/c41bf02b1870be4e16aa8cc3444fa1a1.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/c6a1e290f7ad43cd8933416f39df0050.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/cbd3807edc82bca27c3464d0378610a1.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/cbd3807edc82bca27c3464d0378610a1/cs522-library/AndroidManifest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/cbd3807edc82bca27c3464d0378610a1/cs522-library/R.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/cbd3807edc82bca27c3464d0378610a1/cs522-library/jars/classes.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/cbd3807edc82bca27c3464d0378610a1/cs522-library/res/drawable-v24/ic_launcher_foreground.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/cbd3807edc82bca27c3464d0378610a1/cs522-library/res/drawable/ic_launcher_background.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/cbd3807edc82bca27c3464d0378610a1/cs522-library/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/cbd3807edc82bca27c3464d0378610a1/cs522-library/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/cbd3807edc82bca27c3464d0378610a1/cs522-library/res/mipmap-hdpi-v4/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/cbd3807edc82bca27c3464d0378610a1/cs522-library/res/mipmap-hdpi-v4/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/cbd3807edc82bca27c3464d0378610a1/cs522-library/res/mipmap-mdpi-v4/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/cbd3807edc82bca27c3464d0378610a1/cs522-library/res/mipmap-mdpi-v4/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/cbd3807edc82bca27c3464d0378610a1/cs522-library/res/mipmap-xhdpi-v4/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/cbd3807edc82bca27c3464d0378610a1/cs522-library/res/mipmap-xhdpi-v4/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/cbd3807edc82bca27c3464d0378610a1/cs522-library/res/mipmap-xxhdpi-v4/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/cbd3807edc82bca27c3464d0378610a1/cs522-library/res/mipmap-xxhdpi-v4/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/cbd3807edc82bca27c3464d0378610a1/cs522-library/res/mipmap-xxxhdpi-v4/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/cbd3807edc82bca27c3464d0378610a1/cs522-library/res/mipmap-xxxhdpi-v4/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/cbd3807edc82bca27c3464d0378610a1/cs522-library/res/values/values.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/cc5effbf6606e93b670adf43a8ab7ae2.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/cc5effbf6606e93b670adf43a8ab7ae2/cs522-library-api.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/d0d501e174b76ef8141931418248e042.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/d26cdd69aeb61a454ad9608368ba3e49.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/d65a002543f756ff8a5790351b8e25f0.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/da19cfff05aba97c0067c301ebf3d85a.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/da19cfff05aba97c0067c301ebf3d85a/cs522-library/AndroidManifest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/da19cfff05aba97c0067c301ebf3d85a/cs522-library/R.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/da19cfff05aba97c0067c301ebf3d85a/cs522-library/jars/classes.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/da19cfff05aba97c0067c301ebf3d85a/cs522-library/res/drawable-v24/ic_launcher_foreground.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/da19cfff05aba97c0067c301ebf3d85a/cs522-library/res/drawable/ic_launcher_background.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/da19cfff05aba97c0067c301ebf3d85a/cs522-library/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/da19cfff05aba97c0067c301ebf3d85a/cs522-library/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/da19cfff05aba97c0067c301ebf3d85a/cs522-library/res/mipmap-hdpi-v4/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/da19cfff05aba97c0067c301ebf3d85a/cs522-library/res/mipmap-hdpi-v4/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/da19cfff05aba97c0067c301ebf3d85a/cs522-library/res/mipmap-mdpi-v4/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/da19cfff05aba97c0067c301ebf3d85a/cs522-library/res/mipmap-mdpi-v4/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/da19cfff05aba97c0067c301ebf3d85a/cs522-library/res/mipmap-xhdpi-v4/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/da19cfff05aba97c0067c301ebf3d85a/cs522-library/res/mipmap-xhdpi-v4/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/da19cfff05aba97c0067c301ebf3d85a/cs522-library/res/mipmap-xxhdpi-v4/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/da19cfff05aba97c0067c301ebf3d85a/cs522-library/res/mipmap-xxhdpi-v4/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/da19cfff05aba97c0067c301ebf3d85a/cs522-library/res/mipmap-xxxhdpi-v4/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/da19cfff05aba97c0067c301ebf3d85a/cs522-library/res/mipmap-xxxhdpi-v4/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/da19cfff05aba97c0067c301ebf3d85a/cs522-library/res/values/values.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/daf6f6d4fca66fd306cdc79879cf4814.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/dcff8176a6070759ed033a89c0721f6d.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/dcff8176a6070759ed033a89c0721f6d/cs522-library-api.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/de391de50427bbf8407628ebbf62be07.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/e27296cb7394045124af419b053f3ced.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/e27296cb7394045124af419b053f3ced/cs522-library/AndroidManifest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/e27296cb7394045124af419b053f3ced/cs522-library/R.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/e27296cb7394045124af419b053f3ced/cs522-library/jars/classes.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/e27296cb7394045124af419b053f3ced/cs522-library/res/drawable-v24/ic_launcher_foreground.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/e27296cb7394045124af419b053f3ced/cs522-library/res/drawable/ic_launcher_background.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/e27296cb7394045124af419b053f3ced/cs522-library/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/e27296cb7394045124af419b053f3ced/cs522-library/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/e27296cb7394045124af419b053f3ced/cs522-library/res/mipmap-hdpi-v4/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/e27296cb7394045124af419b053f3ced/cs522-library/res/mipmap-hdpi-v4/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/e27296cb7394045124af419b053f3ced/cs522-library/res/mipmap-mdpi-v4/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/e27296cb7394045124af419b053f3ced/cs522-library/res/mipmap-mdpi-v4/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/e27296cb7394045124af419b053f3ced/cs522-library/res/mipmap-xhdpi-v4/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/e27296cb7394045124af419b053f3ced/cs522-library/res/mipmap-xhdpi-v4/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/e27296cb7394045124af419b053f3ced/cs522-library/res/mipmap-xxhdpi-v4/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/e27296cb7394045124af419b053f3ced/cs522-library/res/mipmap-xxhdpi-v4/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/e27296cb7394045124af419b053f3ced/cs522-library/res/mipmap-xxxhdpi-v4/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/e27296cb7394045124af419b053f3ced/cs522-library/res/mipmap-xxxhdpi-v4/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/e27296cb7394045124af419b053f3ced/cs522-library/res/values/values.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/e3452ce0bea8aacfd138816204ae5a59.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/e8700d1054a810bd99d5c456941c8f38.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/e8a0bdedfca473596d6342ae3cdc79b8.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/e8a0bdedfca473596d6342ae3cdc79b8/cs522-library-runtime/classes.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/ee252f5ce3bf2c050f2655c95a5c7c9f.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/f25d461703a05cd802858d62d27e13b3.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/f2a5df511991268fa34ccdd10fabb67e.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/f2a5df511991268fa34ccdd10fabb67e/cs522-library-runtime/classes.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/f76be1c765dc2606b3881f6773be2355.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/f821d2ef340cd404051d359910d97aad.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/fbe007c423c21f88d377f5ffffc9851a.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/build/.transforms/ffdaf18a11f5b8c004837be9186f22d4.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/cs522-library/cs522-library.aar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/gradle.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Client-Oneway/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/.idea/caches/build_file_checksums.ser" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/.idea/caches/gradle_models.ser" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/.idea/codeStyles/Project.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/.idea/dbnavigator.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/.idea/runConfigurations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/app/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/app/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/app/.idea/caches/gradle_models.ser" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/app/.idea/codeStyles/Project.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/app/.idea/dbnavigator.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/app/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/app/.idea/libraries/Gradle__artifacts_cs522_library_unspecified_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/app/.idea/libraries/Gradle__com_android_support_constraint_constraint_layout_1_1_3_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/app/.idea/libraries/Gradle__com_android_support_constraint_constraint_layout_solver_1_1_3_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/app/.idea/libraries/Gradle__com_android_support_support_annotations_27_1_1_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/app/.idea/libraries/Gradle__com_android_support_test_espresso_espresso_core_3_0_2_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/app/.idea/libraries/Gradle__com_android_support_test_espresso_espresso_idling_resource_3_0_2_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/app/.idea/libraries/Gradle__com_android_support_test_monitor_1_0_2_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/app/.idea/libraries/Gradle__com_android_support_test_runner_1_0_2_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/app/.idea/libraries/Gradle__com_google_code_findbugs_jsr305_3_0_2_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/app/.idea/libraries/Gradle__com_google_errorprone_error_prone_annotations_2_3_2_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/app/.idea/libraries/Gradle__com_google_guava_failureaccess_1_0_1_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/app/.idea/libraries/Gradle__com_google_guava_guava_28_1_android_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/app/.idea/libraries/Gradle__com_google_guava_listenablefuture_9999_0_empty_to_avoid_conflict_with_guava_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/app/.idea/libraries/Gradle__com_google_j2objc_j2objc_annotations_1_3_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/app/.idea/libraries/Gradle__com_squareup_javawriter_2_1_1_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/app/.idea/libraries/Gradle__javax_inject_javax_inject_1_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/app/.idea/libraries/Gradle__junit_junit_4_12_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/app/.idea/libraries/Gradle__net_sf_kxml_kxml2_2_3_0_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/app/.idea/libraries/Gradle__org_checkerframework_checker_compat_qual_2_5_5_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/app/.idea/libraries/Gradle__org_codehaus_mojo_animal_sniffer_annotations_1_18_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/app/.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/app/.idea/libraries/Gradle__org_hamcrest_hamcrest_integration_1_3_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/app/.idea/libraries/Gradle__org_hamcrest_hamcrest_library_1_3_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/app/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/app/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/app/.idea/runConfigurations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/app/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/app/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/app/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/app/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/app/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/app/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/app/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/app/local.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/app/proguard-rules.pro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/app/src/androidTest/java/edu/stevens/cs522/chatserver/ExampleInstrumentedTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/app/src/main/AndroidManifest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/app/src/main/java/edu/stevens/cs522/chatserver/activities/ChatServer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/app/src/main/java/edu/stevens/cs522/chatserver/activities/ViewPeerActivity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/app/src/main/java/edu/stevens/cs522/chatserver/activities/ViewPeersActivity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/app/src/main/java/edu/stevens/cs522/chatserver/async/AsyncContentResolver.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/app/src/main/java/edu/stevens/cs522/chatserver/async/IContinue.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/app/src/main/java/edu/stevens/cs522/chatserver/async/IEntityCreator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/app/src/main/java/edu/stevens/cs522/chatserver/async/IQueryListener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/app/src/main/java/edu/stevens/cs522/chatserver/async/ISimpleQueryListener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/app/src/main/java/edu/stevens/cs522/chatserver/async/QueryBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/app/src/main/java/edu/stevens/cs522/chatserver/async/SimpleQueryBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/app/src/main/java/edu/stevens/cs522/chatserver/contracts/BaseContract.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/app/src/main/java/edu/stevens/cs522/chatserver/contracts/MessageContract.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/app/src/main/java/edu/stevens/cs522/chatserver/contracts/PeerContract.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/app/src/main/java/edu/stevens/cs522/chatserver/entities/Message.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/app/src/main/java/edu/stevens/cs522/chatserver/entities/Peer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/app/src/main/java/edu/stevens/cs522/chatserver/entities/Persistable.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/app/src/main/java/edu/stevens/cs522/chatserver/managers/Manager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/app/src/main/java/edu/stevens/cs522/chatserver/managers/MessageManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/app/src/main/java/edu/stevens/cs522/chatserver/managers/PeerManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/app/src/main/java/edu/stevens/cs522/chatserver/managers/TypedCursor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/app/src/main/java/edu/stevens/cs522/chatserver/providers/ChatProvider.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/app/src/main/res/layout/message.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/app/src/main/res/layout/messages.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/app/src/main/res/layout/view_peer.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/app/src/main/res/layout/view_peers.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/app/src/main/res/menu/chatserver_menu.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/app/src/main/res/values-w820dp/dimens.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/app/src/main/res/values/colors.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/app/src/main/res/values/dimens.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/app/src/main/res/values/strings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/app/src/main/res/values/styles.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/app/src/test/java/edu/stevens/cs522/chatserver/ExampleUnitTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/cs522-library/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/cs522-library/build/.transforms/06698ecf84fa27fca1db9e335152fb1d.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/cs522-library/build/.transforms/06698ecf84fa27fca1db9e335152fb1d/cs522-library/AndroidManifest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/cs522-library/build/.transforms/06698ecf84fa27fca1db9e335152fb1d/cs522-library/R.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/cs522-library/build/.transforms/06698ecf84fa27fca1db9e335152fb1d/cs522-library/jars/classes.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/cs522-library/build/.transforms/06698ecf84fa27fca1db9e335152fb1d/cs522-library/res/drawable-v24/ic_launcher_foreground.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/cs522-library/build/.transforms/06698ecf84fa27fca1db9e335152fb1d/cs522-library/res/drawable/ic_launcher_background.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/cs522-library/build/.transforms/06698ecf84fa27fca1db9e335152fb1d/cs522-library/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/cs522-library/build/.transforms/06698ecf84fa27fca1db9e335152fb1d/cs522-library/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/cs522-library/build/.transforms/06698ecf84fa27fca1db9e335152fb1d/cs522-library/res/mipmap-hdpi-v4/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/cs522-library/build/.transforms/06698ecf84fa27fca1db9e335152fb1d/cs522-library/res/mipmap-hdpi-v4/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/cs522-library/build/.transforms/06698ecf84fa27fca1db9e335152fb1d/cs522-library/res/mipmap-mdpi-v4/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/cs522-library/build/.transforms/06698ecf84fa27fca1db9e335152fb1d/cs522-library/res/mipmap-mdpi-v4/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/cs522-library/build/.transforms/06698ecf84fa27fca1db9e335152fb1d/cs522-library/res/mipmap-xhdpi-v4/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/cs522-library/build/.transforms/06698ecf84fa27fca1db9e335152fb1d/cs522-library/res/mipmap-xhdpi-v4/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/cs522-library/build/.transforms/06698ecf84fa27fca1db9e335152fb1d/cs522-library/res/mipmap-xxhdpi-v4/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/cs522-library/build/.transforms/06698ecf84fa27fca1db9e335152fb1d/cs522-library/res/mipmap-xxhdpi-v4/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/cs522-library/build/.transforms/06698ecf84fa27fca1db9e335152fb1d/cs522-library/res/mipmap-xxxhdpi-v4/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/cs522-library/build/.transforms/06698ecf84fa27fca1db9e335152fb1d/cs522-library/res/mipmap-xxxhdpi-v4/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/cs522-library/build/.transforms/06698ecf84fa27fca1db9e335152fb1d/cs522-library/res/values/values.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/cs522-library/build/.transforms/262605755139b1d6a92e284e258aad96.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/cs522-library/build/.transforms/328e7c38eaa661602aaffcc1dfd30db4.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/cs522-library/build/.transforms/375797cabfd8e3265b36e40db952e78b.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/cs522-library/build/.transforms/41b38c5fbae1c04b38595ad9dd2e2e21.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/cs522-library/build/.transforms/41b38c5fbae1c04b38595ad9dd2e2e21/package-aware-r.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/cs522-library/build/.transforms/4a015cea03fcf6bea55703d8b7f7b7cb.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/cs522-library/build/.transforms/4a015cea03fcf6bea55703d8b7f7b7cb/cs522-library-runtime/classes.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/cs522-library/build/.transforms/50eb3d9314614e45f1bc8acb1aa60596.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/cs522-library/build/.transforms/50f6456b8b4bb7096f9b51650aa39767.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/cs522-library/build/.transforms/53184890031a9c77eb2b908a8c41cd49.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/cs522-library/build/.transforms/53184890031a9c77eb2b908a8c41cd49/cs522-library-runtime/classes.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/cs522-library/build/.transforms/6690287a803ff9b816e9932d6030ebe7.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/cs522-library/build/.transforms/6ddda228088c4b6aa5965c69c0fa23ba.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/cs522-library/build/.transforms/7719bd127ab21958fc32b09887bfa425.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/cs522-library/build/.transforms/77bb9a3be13b08cbf2d68ffa852ac88c.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/cs522-library/build/.transforms/798601dcad86ae7067d9ff499a075843.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/cs522-library/build/.transforms/7bd064775717eb42891542d496ca5be3.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/cs522-library/build/.transforms/7e2546417f63f5652b32b786a20f48fa.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/cs522-library/build/.transforms/91219d44917003c72d48d63327300b60.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/cs522-library/build/.transforms/91219d44917003c72d48d63327300b60/cs522-library-runtime.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/cs522-library/build/.transforms/96147e66c106009fdf56350b5d173709.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/cs522-library/build/.transforms/b23244fa61330e0f69af8a831714ef05.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/cs522-library/build/.transforms/c6867e84e011aa8e9cc4c5be671af7b9.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/cs522-library/build/.transforms/c6867e84e011aa8e9cc4c5be671af7b9/cs522-library-api.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/cs522-library/build/.transforms/d87ef45665d5835a0de9e45e3dba6efb.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/cs522-library/build/.transforms/e1d5316dee69df4d409df824bb8a56a1.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/cs522-library/build/.transforms/e1d5316dee69df4d409df824bb8a56a1/cs522-library/AndroidManifest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/cs522-library/build/.transforms/e1d5316dee69df4d409df824bb8a56a1/cs522-library/R.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/cs522-library/build/.transforms/e1d5316dee69df4d409df824bb8a56a1/cs522-library/jars/classes.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/cs522-library/build/.transforms/e1d5316dee69df4d409df824bb8a56a1/cs522-library/res/drawable-v24/ic_launcher_foreground.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/cs522-library/build/.transforms/e1d5316dee69df4d409df824bb8a56a1/cs522-library/res/drawable/ic_launcher_background.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/cs522-library/build/.transforms/e1d5316dee69df4d409df824bb8a56a1/cs522-library/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/cs522-library/build/.transforms/e1d5316dee69df4d409df824bb8a56a1/cs522-library/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/cs522-library/build/.transforms/e1d5316dee69df4d409df824bb8a56a1/cs522-library/res/mipmap-hdpi-v4/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/cs522-library/build/.transforms/e1d5316dee69df4d409df824bb8a56a1/cs522-library/res/mipmap-hdpi-v4/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/cs522-library/build/.transforms/e1d5316dee69df4d409df824bb8a56a1/cs522-library/res/mipmap-mdpi-v4/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/cs522-library/build/.transforms/e1d5316dee69df4d409df824bb8a56a1/cs522-library/res/mipmap-mdpi-v4/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/cs522-library/build/.transforms/e1d5316dee69df4d409df824bb8a56a1/cs522-library/res/mipmap-xhdpi-v4/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/cs522-library/build/.transforms/e1d5316dee69df4d409df824bb8a56a1/cs522-library/res/mipmap-xhdpi-v4/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/cs522-library/build/.transforms/e1d5316dee69df4d409df824bb8a56a1/cs522-library/res/mipmap-xxhdpi-v4/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/cs522-library/build/.transforms/e1d5316dee69df4d409df824bb8a56a1/cs522-library/res/mipmap-xxhdpi-v4/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/cs522-library/build/.transforms/e1d5316dee69df4d409df824bb8a56a1/cs522-library/res/mipmap-xxxhdpi-v4/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/cs522-library/build/.transforms/e1d5316dee69df4d409df824bb8a56a1/cs522-library/res/mipmap-xxxhdpi-v4/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/cs522-library/build/.transforms/e1d5316dee69df4d409df824bb8a56a1/cs522-library/res/values/values.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/cs522-library/build/.transforms/e5f6224c8757d06f126b33fa5668f09d.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/cs522-library/build/.transforms/fbce205c5c29f2f27c8349c3b672fba2.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/cs522-library/cs522-library.aar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/gradle.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/Assignment5-Code/Demonstration.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignment5-Code/__MACOSX/Assignment5-Code/._.DS_Store" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../Assignment7-Code/Assignment7-Code/Chat-App/.idea/dbnavigator.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Assignment7-Code/Assignment7-Code/Chat-App/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Assignment7-Code/Assignment7-Code/Chat-App/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Assignment7-Code/Assignment7-Code/Chat-App/.idea/caches/gradle_models.ser" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Assignment7-Code/Assignment7-Code/Chat-App/.idea/caches/gradle_models.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Assignment7-Code/Assignment7-Code/Chat-App/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Assignment7-Code/Assignment7-Code/Chat-App/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Assignment7-Code/Assignment7-Code/Chat-App/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Assignment7-Code/Assignment7-Code/Chat-App/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Assignment7-Code/Assignment7-Code/Chat-App/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Assignment7-Code/Assignment7-Code/Chat-App/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Assignment7-Code/Assignment7-Code/Chat-App/app/src/main/java/edu/stevens/cs522/chat/activities/ChatActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Assignment7-Code/Assignment7-Code/Chat-App/app/src/main/java/edu/stevens/cs522/chat/activities/ChatActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Assignment7-Code/Assignment7-Code/Chat-App/app/src/main/java/edu/stevens/cs522/chat/activities/RegisterActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Assignment7-Code/Assignment7-Code/Chat-App/app/src/main/java/edu/stevens/cs522/chat/activities/RegisterActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Assignment7-Code/Assignment7-Code/Chat-App/app/src/main/java/edu/stevens/cs522/chat/contracts/BaseContract.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Assignment7-Code/Assignment7-Code/Chat-App/app/src/main/java/edu/stevens/cs522/chat/contracts/BaseContract.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Assignment7-Code/Assignment7-Code/Chat-App/app/src/main/java/edu/stevens/cs522/chat/contracts/MessageContract.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Assignment7-Code/Assignment7-Code/Chat-App/app/src/main/java/edu/stevens/cs522/chat/contracts/MessageContract.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Assignment7-Code/Assignment7-Code/Chat-App/app/src/main/java/edu/stevens/cs522/chat/contracts/PeerContract.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Assignment7-Code/Assignment7-Code/Chat-App/app/src/main/java/edu/stevens/cs522/chat/contracts/PeerContract.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Assignment7-Code/Assignment7-Code/Chat-App/app/src/main/java/edu/stevens/cs522/chat/entities/ChatMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Assignment7-Code/Assignment7-Code/Chat-App/app/src/main/java/edu/stevens/cs522/chat/entities/ChatMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Assignment7-Code/Assignment7-Code/Chat-App/app/src/main/java/edu/stevens/cs522/chat/entities/Peer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Assignment7-Code/Assignment7-Code/Chat-App/app/src/main/java/edu/stevens/cs522/chat/entities/Peer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Assignment7-Code/Assignment7-Code/Chat-App/app/src/main/java/edu/stevens/cs522/chat/managers/Manager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Assignment7-Code/Assignment7-Code/Chat-App/app/src/main/java/edu/stevens/cs522/chat/managers/Manager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Assignment7-Code/Assignment7-Code/Chat-App/app/src/main/java/edu/stevens/cs522/chat/managers/MessageManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Assignment7-Code/Assignment7-Code/Chat-App/app/src/main/java/edu/stevens/cs522/chat/managers/MessageManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Assignment7-Code/Assignment7-Code/Chat-App/app/src/main/java/edu/stevens/cs522/chat/managers/PeerManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Assignment7-Code/Assignment7-Code/Chat-App/app/src/main/java/edu/stevens/cs522/chat/managers/PeerManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Assignment7-Code/Assignment7-Code/Chat-App/app/src/main/java/edu/stevens/cs522/chat/providers/ChatProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Assignment7-Code/Assignment7-Code/Chat-App/app/src/main/java/edu/stevens/cs522/chat/providers/ChatProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Assignment7-Code/Assignment7-Code/Chat-App/app/src/main/java/edu/stevens/cs522/chat/rest/ChatHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Assignment7-Code/Assignment7-Code/Chat-App/app/src/main/java/edu/stevens/cs522/chat/rest/ChatHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Assignment7-Code/Assignment7-Code/Chat-App/app/src/main/java/edu/stevens/cs522/chat/rest/RegisterRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Assignment7-Code/Assignment7-Code/Chat-App/app/src/main/java/edu/stevens/cs522/chat/rest/RegisterRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Assignment7-Code/Assignment7-Code/Chat-App/app/src/main/java/edu/stevens/cs522/chat/rest/Request.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Assignment7-Code/Assignment7-Code/Chat-App/app/src/main/java/edu/stevens/cs522/chat/rest/Request.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Assignment7-Code/Assignment7-Code/Chat-App/app/src/main/java/edu/stevens/cs522/chat/rest/RequestProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Assignment7-Code/Assignment7-Code/Chat-App/app/src/main/java/edu/stevens/cs522/chat/rest/RequestProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Assignment7-Code/Assignment7-Code/Chat-App/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Assignment7-Code/Assignment7-Code/Chat-App/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../wk5/Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/cs522-library/build/.transforms/2a4ac5a942bae12bd1470d2a45600ec9/cs522-library/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../wk5/Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/cs522-library/build/.transforms/2a4ac5a942bae12bd1470d2a45600ec9/cs522-library/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../wk5/Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/cs522-library/build/.transforms/2a4ac5a942bae12bd1470d2a45600ec9/cs522-library/R.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../wk5/Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/cs522-library/build/.transforms/2a4ac5a942bae12bd1470d2a45600ec9/cs522-library/R.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../wk5/Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/cs522-library/build/.transforms/2a4ac5a942bae12bd1470d2a45600ec9/cs522-library/res/drawable-v24/ic_launcher_foreground.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../wk5/Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/cs522-library/build/.transforms/2a4ac5a942bae12bd1470d2a45600ec9/cs522-library/res/drawable-v24/ic_launcher_foreground.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../wk5/Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/cs522-library/build/.transforms/2a4ac5a942bae12bd1470d2a45600ec9/cs522-library/res/drawable/ic_launcher_background.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../wk5/Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/cs522-library/build/.transforms/2a4ac5a942bae12bd1470d2a45600ec9/cs522-library/res/drawable/ic_launcher_background.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../wk5/Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/cs522-library/build/.transforms/2a4ac5a942bae12bd1470d2a45600ec9/cs522-library/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../wk5/Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/cs522-library/build/.transforms/2a4ac5a942bae12bd1470d2a45600ec9/cs522-library/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../wk5/Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/cs522-library/build/.transforms/2a4ac5a942bae12bd1470d2a45600ec9/cs522-library/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../wk5/Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/cs522-library/build/.transforms/2a4ac5a942bae12bd1470d2a45600ec9/cs522-library/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../wk5/Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/cs522-library/build/.transforms/2a4ac5a942bae12bd1470d2a45600ec9/cs522-library/res/values/values.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../wk5/Assignment5-Code/Assignment5-Code/Chat-Server-Oneway/cs522-library/build/.transforms/2a4ac5a942bae12bd1470d2a45600ec9/cs522-library/res/values/values.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chat-App/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/Chat-App/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chat-App/.idea/caches/gradle_models.ser" beforeDir="false" afterPath="$PROJECT_DIR$/Chat-App/.idea/caches/gradle_models.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chat-App/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Chat-App/.idea/vcs.xml" afterDir="false" />
     </list>
     <ignored path="Chat-App-Basic.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -585,7 +54,7 @@
     <favorites_list name="Chat-App-Basic" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -593,7 +62,7 @@
     </FindUsagesManager>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="60" />
@@ -610,9 +79,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -622,7 +91,8 @@
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="MemberChooser.sorted" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Chat-App/app" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Chat-App" />
     <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
@@ -750,16 +220,15 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info id="Image Layers" />
-      <window_info id="DB Browser" />
-      <window_info id="Resources Explorer" />
-      <window_info id="Capture Tool" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16471216" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16791044" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Build Variants" order="2" side_tool="true" />
       <window_info id="Palette&#9;" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
-      <window_info anchor="bottom" id="DB Execution Console" />
+      <window_info id="Image Layers" order="5" />
+      <window_info id="DB Browser" order="6" />
+      <window_info id="Capture Tool" order="7" />
+      <window_info id="Resources Explorer" order="8" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -776,14 +245,15 @@
       <window_info active="true" anchor="bottom" id="Event Log" order="13" side_tool="true" visible="true" weight="0.32936078" />
       <window_info anchor="bottom" id="Gradle Console" order="14" side_tool="true" />
       <window_info active="true" anchor="bottom" id="Messages" order="15" visible="true" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="bottom" id="DB Execution Console" order="16" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Gradle" order="3" />
       <window_info anchor="right" id="Designer" order="4" />
       <window_info anchor="right" id="Maven Projects" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Theme Preview" order="7" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
