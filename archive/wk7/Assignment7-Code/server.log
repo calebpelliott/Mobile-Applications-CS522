@@ -1,0 +1,27 @@
+Apr 05, 2020 1:56:41 PM edu.stevens.cs522.chat.webservice.Main info
+INFO: Starting HTTP server...
+Apr 05, 2020 1:56:42 PM org.glassfish.grizzly.http.server.NetworkListener start
+INFO: Started listener bound to [192.168.1.126:8080]
+Apr 05, 2020 1:56:42 PM org.glassfish.grizzly.http.server.HttpServer start
+INFO: [HttpServer] Started.
+Apr 05, 2020 1:56:42 PM edu.stevens.cs522.chat.webservice.Main info
+INFO: Listening at http://192.168.1.126:8080
+Apr 05, 2020 1:56:42 PM edu.stevens.cs522.chat.webservice.Main info
+INFO: Service available at http://192.168.1.126:8080/chat
+Hit enter to stop...
+Apr 05, 2020 1:56:52 PM edu.stevens.cs522.chat.webservice.ChatResource register
+INFO: Received registration request (appId=c0e71aed-debd-4e25-8041-8f7b1675fb2d, username=Caleb, timestamp=1586109411380, latitude=0.0, longitude=0.0)
+Apr 05, 2020 1:56:52 PM edu.stevens.cs522.chat.webservice.ChatResource register
+INFO: Successfully registered user Caleb with UUID c0e71aed-debd-4e25-8041-8f7b1675fb2d.
+Apr 05, 2020 1:57:10 PM edu.stevens.cs522.chat.webservice.ChatResource postMessage
+INFO: Received postMessage request (id = 1)
+Apr 05, 2020 1:57:10 PM edu.stevens.cs522.chat.webservice.ChatResource postMessage
+INFO: Received message hello (chatroom room)
+Apr 05, 2020 1:57:20 PM edu.stevens.cs522.chat.webservice.ChatResource postMessage
+INFO: Received postMessage request (id = 1)
+Apr 05, 2020 1:57:20 PM edu.stevens.cs522.chat.webservice.ChatResource postMessage
+INFO: Received message hello2 (chatroom room2)
+Apr 05, 2020 1:59:34 PM edu.stevens.cs522.chat.webservice.ChatResource postMessage
+INFO: Received postMessage request (id = 1)
+Apr 05, 2020 1:59:34 PM edu.stevens.cs522.chat.webservice.ChatResource postMessage
+INFO: Received message hstr (chatroom room2)

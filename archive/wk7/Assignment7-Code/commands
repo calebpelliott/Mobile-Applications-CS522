@@ -1,0 +1,6 @@
+curl -X POST -D headers -H 'X-App-Id: 123e4567-e89b-12d3-a456-426655440000' -H 'X-Latitude: 0.0' -H 'X-Longitude: 0.0' -H 'X-Timestamp: 0' -D headers http://192.168.1.126:8080/chat?chat-name=Joe
+
+curl -X POST -D headers -H 'X-App-Id: 123e4567-e89b-12d3-a456-426655440000' -H 'X-Latitude: 0.0' -H 'X-Longitude: 0.0' -H 'X-Timestamp: 0' -H 'Content-Type: application/json' -d @message.json -D headers http://192.168.1.126:8080/chat/3/messages
+
+
+curl -X GET -H 'X-App-Id: 123e4567-e89b-12d3-a456-426655440000' http://192.168.1.126:8080/chat
