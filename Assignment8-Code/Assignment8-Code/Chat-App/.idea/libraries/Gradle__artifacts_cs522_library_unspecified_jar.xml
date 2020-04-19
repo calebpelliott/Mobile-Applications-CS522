@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: artifacts:cs522-library:unspecified@jar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/cs522-library/build/.transforms/280f5b92a923515f697a66db95a975a3/cs522-library/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/cs522-library/build/.transforms/280f5b92a923515f697a66db95a975a3/cs522-library/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

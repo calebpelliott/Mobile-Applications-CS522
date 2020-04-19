@@ -1,6 +1,0 @@
-C:\Users\caleb\AppData\Local\Android\Sdk\platform-tools
-
-adb -s emulator-5554 forward tcp:6667 tcp:6666
-adb -s emulator-5556 forward tcp:6668 tcp:6666
-
-1:client 6668, 2:server 6667
