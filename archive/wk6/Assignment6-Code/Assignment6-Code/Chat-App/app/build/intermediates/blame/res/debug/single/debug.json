@@ -1,0 +1,82 @@
+[
+    {
+        "merged": "C:\\Users\\caleb\\AndroidStudioProjects\\CalebElliottsFirstApp\\archive\\wk6\\Assignment6-Code\\Assignment6-Code\\Chat-App\\app\\build\\intermediates\\res\\merged\\debug\\layout_view_peers.xml.flat",
+        "source": "C:\\Users\\caleb\\AndroidStudioProjects\\CalebElliottsFirstApp\\archive\\wk6\\Assignment6-Code\\Assignment6-Code\\Chat-App\\app\\src\\main\\res\\layout\\view_peers.xml"
+    },
+    {
+        "merged": "C:\\Users\\caleb\\AndroidStudioProjects\\CalebElliottsFirstApp\\archive\\wk6\\Assignment6-Code\\Assignment6-Code\\Chat-App\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\caleb\\AndroidStudioProjects\\CalebElliottsFirstApp\\archive\\wk6\\Assignment6-Code\\Assignment6-Code\\Chat-App\\cs522-library\\build\\.transforms\\e2e148677555e12f577748c9f94516ff\\cs522-library\\res\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\caleb\\AndroidStudioProjects\\CalebElliottsFirstApp\\archive\\wk6\\Assignment6-Code\\Assignment6-Code\\Chat-App\\app\\build\\intermediates\\res\\merged\\debug\\layout_messages.xml.flat",
+        "source": "C:\\Users\\caleb\\AndroidStudioProjects\\CalebElliottsFirstApp\\archive\\wk6\\Assignment6-Code\\Assignment6-Code\\Chat-App\\app\\src\\main\\res\\layout\\messages.xml"
+    },
+    {
+        "merged": "C:\\Users\\caleb\\AndroidStudioProjects\\CalebElliottsFirstApp\\archive\\wk6\\Assignment6-Code\\Assignment6-Code\\Chat-App\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\caleb\\AndroidStudioProjects\\CalebElliottsFirstApp\\archive\\wk6\\Assignment6-Code\\Assignment6-Code\\Chat-App\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\caleb\\AndroidStudioProjects\\CalebElliottsFirstApp\\archive\\wk6\\Assignment6-Code\\Assignment6-Code\\Chat-App\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\caleb\\AndroidStudioProjects\\CalebElliottsFirstApp\\archive\\wk6\\Assignment6-Code\\Assignment6-Code\\Chat-App\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\caleb\\AndroidStudioProjects\\CalebElliottsFirstApp\\archive\\wk6\\Assignment6-Code\\Assignment6-Code\\Chat-App\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\caleb\\AndroidStudioProjects\\CalebElliottsFirstApp\\archive\\wk6\\Assignment6-Code\\Assignment6-Code\\Chat-App\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\caleb\\AndroidStudioProjects\\CalebElliottsFirstApp\\archive\\wk6\\Assignment6-Code\\Assignment6-Code\\Chat-App\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\caleb\\AndroidStudioProjects\\CalebElliottsFirstApp\\archive\\wk6\\Assignment6-Code\\Assignment6-Code\\Chat-App\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\caleb\\AndroidStudioProjects\\CalebElliottsFirstApp\\archive\\wk6\\Assignment6-Code\\Assignment6-Code\\Chat-App\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\caleb\\AndroidStudioProjects\\CalebElliottsFirstApp\\archive\\wk6\\Assignment6-Code\\Assignment6-Code\\Chat-App\\cs522-library\\build\\.transforms\\e2e148677555e12f577748c9f94516ff\\cs522-library\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\caleb\\AndroidStudioProjects\\CalebElliottsFirstApp\\archive\\wk6\\Assignment6-Code\\Assignment6-Code\\Chat-App\\app\\build\\intermediates\\res\\merged\\debug\\xml_settings.xml.flat",
+        "source": "C:\\Users\\caleb\\AndroidStudioProjects\\CalebElliottsFirstApp\\archive\\wk6\\Assignment6-Code\\Assignment6-Code\\Chat-App\\app\\src\\main\\res\\xml\\settings.xml"
+    },
+    {
+        "merged": "C:\\Users\\caleb\\AndroidStudioProjects\\CalebElliottsFirstApp\\archive\\wk6\\Assignment6-Code\\Assignment6-Code\\Chat-App\\app\\build\\intermediates\\res\\merged\\debug\\layout_view_peer.xml.flat",
+        "source": "C:\\Users\\caleb\\AndroidStudioProjects\\CalebElliottsFirstApp\\archive\\wk6\\Assignment6-Code\\Assignment6-Code\\Chat-App\\app\\src\\main\\res\\layout\\view_peer.xml"
+    },
+    {
+        "merged": "C:\\Users\\caleb\\AndroidStudioProjects\\CalebElliottsFirstApp\\archive\\wk6\\Assignment6-Code\\Assignment6-Code\\Chat-App\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\caleb\\AndroidStudioProjects\\CalebElliottsFirstApp\\archive\\wk6\\Assignment6-Code\\Assignment6-Code\\Chat-App\\cs522-library\\build\\.transforms\\e2e148677555e12f577748c9f94516ff\\cs522-library\\res\\mipmap-xxhdpi-v4\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\caleb\\AndroidStudioProjects\\CalebElliottsFirstApp\\archive\\wk6\\Assignment6-Code\\Assignment6-Code\\Chat-App\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\caleb\\AndroidStudioProjects\\CalebElliottsFirstApp\\archive\\wk6\\Assignment6-Code\\Assignment6-Code\\Chat-App\\cs522-library\\build\\.transforms\\e2e148677555e12f577748c9f94516ff\\cs522-library\\res\\mipmap-xhdpi-v4\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\caleb\\AndroidStudioProjects\\CalebElliottsFirstApp\\archive\\wk6\\Assignment6-Code\\Assignment6-Code\\Chat-App\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\caleb\\AndroidStudioProjects\\CalebElliottsFirstApp\\archive\\wk6\\Assignment6-Code\\Assignment6-Code\\Chat-App\\cs522-library\\build\\.transforms\\e2e148677555e12f577748c9f94516ff\\cs522-library\\res\\drawable-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\caleb\\AndroidStudioProjects\\CalebElliottsFirstApp\\archive\\wk6\\Assignment6-Code\\Assignment6-Code\\Chat-App\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\caleb\\AndroidStudioProjects\\CalebElliottsFirstApp\\archive\\wk6\\Assignment6-Code\\Assignment6-Code\\Chat-App\\cs522-library\\build\\.transforms\\e2e148677555e12f577748c9f94516ff\\cs522-library\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\caleb\\AndroidStudioProjects\\CalebElliottsFirstApp\\archive\\wk6\\Assignment6-Code\\Assignment6-Code\\Chat-App\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi-v4_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\caleb\\AndroidStudioProjects\\CalebElliottsFirstApp\\archive\\wk6\\Assignment6-Code\\Assignment6-Code\\Chat-App\\cs522-library\\build\\.transforms\\e2e148677555e12f577748c9f94516ff\\cs522-library\\res\\mipmap-hdpi-v4\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\caleb\\AndroidStudioProjects\\CalebElliottsFirstApp\\archive\\wk6\\Assignment6-Code\\Assignment6-Code\\Chat-App\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi-v4_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\caleb\\AndroidStudioProjects\\CalebElliottsFirstApp\\archive\\wk6\\Assignment6-Code\\Assignment6-Code\\Chat-App\\cs522-library\\build\\.transforms\\e2e148677555e12f577748c9f94516ff\\cs522-library\\res\\mipmap-mdpi-v4\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\caleb\\AndroidStudioProjects\\CalebElliottsFirstApp\\archive\\wk6\\Assignment6-Code\\Assignment6-Code\\Chat-App\\app\\build\\intermediates\\res\\merged\\debug\\layout_message.xml.flat",
+        "source": "C:\\Users\\caleb\\AndroidStudioProjects\\CalebElliottsFirstApp\\archive\\wk6\\Assignment6-Code\\Assignment6-Code\\Chat-App\\app\\src\\main\\res\\layout\\message.xml"
+    },
+    {
+        "merged": "C:\\Users\\caleb\\AndroidStudioProjects\\CalebElliottsFirstApp\\archive\\wk6\\Assignment6-Code\\Assignment6-Code\\Chat-App\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\caleb\\AndroidStudioProjects\\CalebElliottsFirstApp\\archive\\wk6\\Assignment6-Code\\Assignment6-Code\\Chat-App\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\caleb\\AndroidStudioProjects\\CalebElliottsFirstApp\\archive\\wk6\\Assignment6-Code\\Assignment6-Code\\Chat-App\\app\\build\\intermediates\\res\\merged\\debug\\menu_chatserver_menu.xml.flat",
+        "source": "C:\\Users\\caleb\\AndroidStudioProjects\\CalebElliottsFirstApp\\archive\\wk6\\Assignment6-Code\\Assignment6-Code\\Chat-App\\app\\src\\main\\res\\menu\\chatserver_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\caleb\\AndroidStudioProjects\\CalebElliottsFirstApp\\archive\\wk6\\Assignment6-Code\\Assignment6-Code\\Chat-App\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi-v4_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\caleb\\AndroidStudioProjects\\CalebElliottsFirstApp\\archive\\wk6\\Assignment6-Code\\Assignment6-Code\\Chat-App\\cs522-library\\build\\.transforms\\e2e148677555e12f577748c9f94516ff\\cs522-library\\res\\mipmap-xxxhdpi-v4\\ic_launcher_round.png"
+    }
+]

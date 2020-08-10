@@ -1,0 +1,86 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="edu.stevens.cs522.chat"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="22"
+8-->C:\Users\caleb\AndroidStudioProjects\CalebElliottsFirstApp\Assignment6-Code\Assignment6-Code\Chat-App\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->C:\Users\caleb\AndroidStudioProjects\CalebElliottsFirstApp\Assignment6-Code\Assignment6-Code\Chat-App\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+11-->C:\Users\caleb\AndroidStudioProjects\CalebElliottsFirstApp\Assignment6-Code\Assignment6-Code\Chat-App\app\src\main\AndroidManifest.xml:5:5-81
+11-->C:\Users\caleb\AndroidStudioProjects\CalebElliottsFirstApp\Assignment6-Code\Assignment6-Code\Chat-App\app\src\main\AndroidManifest.xml:5:22-78
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->C:\Users\caleb\AndroidStudioProjects\CalebElliottsFirstApp\Assignment6-Code\Assignment6-Code\Chat-App\app\src\main\AndroidManifest.xml:6:5-67
+12-->C:\Users\caleb\AndroidStudioProjects\CalebElliottsFirstApp\Assignment6-Code\Assignment6-Code\Chat-App\app\src\main\AndroidManifest.xml:6:22-64
+13
+14    <application
+14-->C:\Users\caleb\AndroidStudioProjects\CalebElliottsFirstApp\Assignment6-Code\Assignment6-Code\Chat-App\app\src\main\AndroidManifest.xml:8:5-39:19
+15        android:allowBackup="true"
+15-->C:\Users\caleb\AndroidStudioProjects\CalebElliottsFirstApp\Assignment6-Code\Assignment6-Code\Chat-App\app\src\main\AndroidManifest.xml:9:9-35
+16        android:debuggable="true"
+17        android:icon="@mipmap/ic_launcher"
+17-->C:\Users\caleb\AndroidStudioProjects\CalebElliottsFirstApp\Assignment6-Code\Assignment6-Code\Chat-App\app\src\main\AndroidManifest.xml:10:9-43
+18        android:label="@string/app_name"
+18-->C:\Users\caleb\AndroidStudioProjects\CalebElliottsFirstApp\Assignment6-Code\Assignment6-Code\Chat-App\app\src\main\AndroidManifest.xml:11:9-41
+19        android:roundIcon="@mipmap/ic_launcher_round"
+19-->[:cs522-library] C:\Users\caleb\AndroidStudioProjects\CalebElliottsFirstApp\Assignment6-Code\Assignment6-Code\Chat-App\cs522-library\build\.transforms\c3e89a3af70b090265fab38ff5fa1ee7\cs522-library\AndroidManifest.xml:15:9-54
+20        android:supportsRtl="true"
+20-->C:\Users\caleb\AndroidStudioProjects\CalebElliottsFirstApp\Assignment6-Code\Assignment6-Code\Chat-App\app\src\main\AndroidManifest.xml:12:9-35
+21        android:testOnly="true"
+22        android:theme="@style/AppTheme" >
+22-->C:\Users\caleb\AndroidStudioProjects\CalebElliottsFirstApp\Assignment6-Code\Assignment6-Code\Chat-App\app\src\main\AndroidManifest.xml:13:9-40
+23        <activity android:name="edu.stevens.cs522.chat.activities.ChatActivity" >
+23-->C:\Users\caleb\AndroidStudioProjects\CalebElliottsFirstApp\Assignment6-Code\Assignment6-Code\Chat-App\app\src\main\AndroidManifest.xml:14:9-20:20
+23-->C:\Users\caleb\AndroidStudioProjects\CalebElliottsFirstApp\Assignment6-Code\Assignment6-Code\Chat-App\app\src\main\AndroidManifest.xml:14:19-58
+24            <intent-filter>
+24-->C:\Users\caleb\AndroidStudioProjects\CalebElliottsFirstApp\Assignment6-Code\Assignment6-Code\Chat-App\app\src\main\AndroidManifest.xml:15:13-19:29
+25                <action android:name="android.intent.action.MAIN" />
+25-->C:\Users\caleb\AndroidStudioProjects\CalebElliottsFirstApp\Assignment6-Code\Assignment6-Code\Chat-App\app\src\main\AndroidManifest.xml:16:17-69
+25-->C:\Users\caleb\AndroidStudioProjects\CalebElliottsFirstApp\Assignment6-Code\Assignment6-Code\Chat-App\app\src\main\AndroidManifest.xml:16:25-66
+26
+27                <category android:name="android.intent.category.LAUNCHER" />
+27-->C:\Users\caleb\AndroidStudioProjects\CalebElliottsFirstApp\Assignment6-Code\Assignment6-Code\Chat-App\app\src\main\AndroidManifest.xml:18:17-77
+27-->C:\Users\caleb\AndroidStudioProjects\CalebElliottsFirstApp\Assignment6-Code\Assignment6-Code\Chat-App\app\src\main\AndroidManifest.xml:18:27-74
+28            </intent-filter>
+29        </activity>
+30        <activity
+30-->C:\Users\caleb\AndroidStudioProjects\CalebElliottsFirstApp\Assignment6-Code\Assignment6-Code\Chat-App\app\src\main\AndroidManifest.xml:21:9-23:65
+31            android:name="edu.stevens.cs522.chat.activities.ViewPeersActivity"
+31-->C:\Users\caleb\AndroidStudioProjects\CalebElliottsFirstApp\Assignment6-Code\Assignment6-Code\Chat-App\app\src\main\AndroidManifest.xml:22:13-57
+32            android:label="@string/title_activity_view_peers" />
+32-->C:\Users\caleb\AndroidStudioProjects\CalebElliottsFirstApp\Assignment6-Code\Assignment6-Code\Chat-App\app\src\main\AndroidManifest.xml:23:13-62
+33        <activity
+33-->C:\Users\caleb\AndroidStudioProjects\CalebElliottsFirstApp\Assignment6-Code\Assignment6-Code\Chat-App\app\src\main\AndroidManifest.xml:24:9-26:64
+34            android:name="edu.stevens.cs522.chat.activities.ViewPeerActivity"
+34-->C:\Users\caleb\AndroidStudioProjects\CalebElliottsFirstApp\Assignment6-Code\Assignment6-Code\Chat-App\app\src\main\AndroidManifest.xml:25:13-56
+35            android:label="@string/title_activity_view_peer" />
+35-->C:\Users\caleb\AndroidStudioProjects\CalebElliottsFirstApp\Assignment6-Code\Assignment6-Code\Chat-App\app\src\main\AndroidManifest.xml:26:13-61
+36        <activity
+36-->C:\Users\caleb\AndroidStudioProjects\CalebElliottsFirstApp\Assignment6-Code\Assignment6-Code\Chat-App\app\src\main\AndroidManifest.xml:27:9-29:63
+37            android:name="edu.stevens.cs522.chat.activities.SettingsActivity"
+37-->C:\Users\caleb\AndroidStudioProjects\CalebElliottsFirstApp\Assignment6-Code\Assignment6-Code\Chat-App\app\src\main\AndroidManifest.xml:28:13-56
+38            android:label="@string/title_activity_settings" />
+38-->C:\Users\caleb\AndroidStudioProjects\CalebElliottsFirstApp\Assignment6-Code\Assignment6-Code\Chat-App\app\src\main\AndroidManifest.xml:29:13-60
+39
+40        <service
+40-->C:\Users\caleb\AndroidStudioProjects\CalebElliottsFirstApp\Assignment6-Code\Assignment6-Code\Chat-App\app\src\main\AndroidManifest.xml:31:9-34:48
+41            android:name="edu.stevens.cs522.chat.services.ChatService"
+41-->C:\Users\caleb\AndroidStudioProjects\CalebElliottsFirstApp\Assignment6-Code\Assignment6-Code\Chat-App\app\src\main\AndroidManifest.xml:32:13-49
+42            android:enabled="true"
+42-->C:\Users\caleb\AndroidStudioProjects\CalebElliottsFirstApp\Assignment6-Code\Assignment6-Code\Chat-App\app\src\main\AndroidManifest.xml:33:13-35
+43            android:exported="false" />
+43-->C:\Users\caleb\AndroidStudioProjects\CalebElliottsFirstApp\Assignment6-Code\Assignment6-Code\Chat-App\app\src\main\AndroidManifest.xml:34:13-37
+44
+45        <provider
+45-->C:\Users\caleb\AndroidStudioProjects\CalebElliottsFirstApp\Assignment6-Code\Assignment6-Code\Chat-App\app\src\main\AndroidManifest.xml:36:9-38:53
+46            android:name="edu.stevens.cs522.chat.providers.ChatProvider"
+46-->C:\Users\caleb\AndroidStudioProjects\CalebElliottsFirstApp\Assignment6-Code\Assignment6-Code\Chat-App\app\src\main\AndroidManifest.xml:38:13-51
+47            android:authorities="edu.stevens.cs522.chat" />
+47-->C:\Users\caleb\AndroidStudioProjects\CalebElliottsFirstApp\Assignment6-Code\Assignment6-Code\Chat-App\app\src\main\AndroidManifest.xml:37:13-57
+48    </application>
+49
+50</manifest>
